@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeevan Ankur Seva Foundation — Care, Dignity & Love for Every Elder</title>
+  <meta name="description" content="Jeevan Ankur Seva Foundation provides compassionate elderly care, shelter, nutrition, and emotional well-being at our Old Age Home (Vridhashram) in Kurla East, Mumbai.">
+  <meta name="keywords" content="old age home Mumbai, elderly care India, senior citizen home Kurla, Vridhashram, Jeevan Ankur, donate elderly care, volunteer old age home">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jeevan Ankur Seva Foundation — Care for Every Elder">
+  <meta property="og:description" content="A safe, family-like environment for senior citizens. Providing care, love, and dignity at our Vridhashram in Mumbai.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E8722A',
+            'primary-dark': '#C85E1F',
+            secondary: '#1A6B5C',
+            'secondary-dark': '#145549',
+            accent: '#F5A623',
+            cream: '#FFF8F0',
+            charcoal: '#2D2D2D',
+            'light-gray': '#F5F0EB',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+            <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
+          <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
+          <a href="services.html" class="nav-link text-sm font-medium text-charcoal">Services</a>
+          <a href="activities.html" class="nav-link text-sm font-medium text-charcoal">Activities</a>
+          <a href="gallery.html" class="nav-link text-sm font-medium text-charcoal">Gallery</a>
+          <a href="team.html" class="nav-link text-sm font-medium text-charcoal">Our Team</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
+          <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
+        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
+        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
+        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
+        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
+        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
+        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
+        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
+        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2">
+            <i class="fas fa-phone text-primary"></i> +91 8169615400
+          </a>
+          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2">
+            <i class="fas fa-envelope text-primary"></i> Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section">
+    <div class="hero-bg" style="background-image: url('assets/images/team.jpg.jpeg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="text-accent font-semibold text-lg mb-4 tracking-wide uppercase">Welcome to Jeevan Ankur Seva Foundation</p>
+      <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        Every Elder Deserves<br>
+        <span class="text-accent">Love, Care & Dignity</span>
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
+        Providing a safe, family-like home for senior citizens with compassion, respect, and round-the-clock care at our Vridhashram in Mumbai.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="about.html" class="btn-secondary">
+          <i class="fas fa-info-circle"></i> Learn More
+        </a>
+        <a href="donate.html" class="btn-primary">
+          <i class="fas fa-hand-holding-heart"></i> Donate Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STRIP ===== -->
+  <section class="bg-secondary py-4">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6 md:gap-12 text-white/90 text-sm font-medium">
+      <span class="flex items-center gap-2"><i class="fas fa-shield-halved text-accent"></i> Registered Trust</span>
+      <span class="flex items-center gap-2"><i class="fas fa-certificate text-accent"></i> 80G Tax Exempt</span>
+      <span class="flex items-center gap-2"><i class="fas fa-clock text-accent"></i> 24/7 Care Support</span>
+      <span class="flex items-center gap-2"><i class="fas fa-heart-pulse text-accent"></i> Medical Assistance</span>
+    </div>
+  </section>
+
+  <!-- ===== MISSION CARDS ===== -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="section-title font-heading">Our Core Promise</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">We are committed to creating a world where no elder feels alone, neglected, or without love.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="card text-center fade-in">
+          <div class="card-icon bg-primary/10 text-primary mx-auto">
+            <i class="fas fa-hand-holding-heart text-2xl"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3">Compassionate Care</h3>
+          <p class="text-gray-600">We provide round-the-clock care with personal attention, ensuring every elder feels valued, safe, and loved.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card text-center fade-in delay-200">
+          <div class="card-icon bg-secondary/10 text-secondary mx-auto">
+            <i class="fas fa-hands-praying text-2xl"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3">Dignity & Respect</h3>
+          <p class="text-gray-600">Every resident is treated with the utmost dignity. We uphold their autonomy, cultural values, and personal choices.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card text-center fade-in delay-400">
+          <div class="card-icon bg-accent/20 text-accent mx-auto">
+            <i class="fas fa-people-group text-2xl"></i>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3">Community & Belonging</h3>
+          <p class="text-gray-600">Through daily activities, celebrations, and companionship, we eliminate loneliness and foster a family-like bond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS COUNTER ===== -->
+  <section class="bg-secondary py-16 px-4">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="stat-item fade-in">
+        <div class="stat-number text-white" data-count="50" data-suffix="+">0</div>
+        <p class="stat-label text-white/70">Elders Cared For</p>
+      </div>
+      <div class="stat-item fade-in delay-100">
+        <div class="stat-number text-white" data-count="5" data-suffix="+">0</div>
+        <p class="stat-label text-white/70">Years of Service</p>
+      </div>
+      <div class="stat-item fade-in delay-200">
+        <div class="stat-number text-white" data-count="1000" data-suffix="+">0</div>
+        <p class="stat-label text-white/70">Meals Served Monthly</p>
+      </div>
+      <div class="stat-item fade-in delay-300">
+        <div class="stat-number text-white" data-count="100" data-suffix="+">0</div>
+        <p class="stat-label text-white/70">Volunteers Engaged</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PREVIEW ===== -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="fade-in-left">
+        <img src="assets/images/elders-2.jpg.jpeg" alt="Caring for elderly residents at Jeevan Ankur" class="rounded-2xl shadow-lg w-full h-80 md:h-96 object-cover">
+      </div>
+      <div class="fade-in-right">
+        <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-2">About Our Foundation</p>
+        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">A Home Where Elders Find Family</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          Jeevan Ankur Seva Foundation was born from a simple but powerful belief — that every senior citizen deserves to live their golden years with dignity, love, and a sense of belonging.
+        </p>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          At our Vridhashram in Kurla East, Mumbai, we provide not just shelter, but a warm, family-like environment where our respected residents enjoy nutritious meals, healthcare, daily activities, and the companionship that every human heart craves.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="about.html" class="btn-outline">
+            <i class="fas fa-arrow-right"></i> Read Our Story
+          </a>
+          <a href="old-age-home.html" class="btn-outline">
+            <i class="fas fa-home"></i> Visit the Vridhashram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES PREVIEW ===== -->
+  <section class="bg-light-gray py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="section-title font-heading">How We Serve Our Elders</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Comprehensive care that nurtures body, mind, and spirit.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card fade-in">
+          <div class="card-icon bg-primary/10 text-primary">
+            <i class="fas fa-house-chimney text-xl"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold mb-2">Residential Care</h3>
+          <p class="text-gray-600 text-sm">Safe living spaces with accommodation, hygiene assistance, and personal care.</p>
+          <a href="services.html" class="text-primary font-semibold text-sm mt-3 inline-block hover:underline">Learn More →</a>
+        </div>
+
+        <div class="card fade-in delay-100">
+          <div class="card-icon bg-green-100 text-green-700">
+            <i class="fas fa-utensils text-xl"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold mb-2">Nutrition & Health</h3>
+          <p class="text-gray-600 text-sm">Balanced daily meals, routine medical check-ups, and emergency healthcare support.</p>
+          <a href="services.html" class="text-primary font-semibold text-sm mt-3 inline-block hover:underline">Learn More →</a>
+        </div>
+
+        <div class="card fade-in delay-200">
+          <div class="card-icon bg-purple-100 text-purple-700">
+            <i class="fas fa-face-smile text-xl"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold mb-2">Emotional Well-Being</h3>
+          <p class="text-gray-600 text-sm">Daily social interaction, activities, cultural celebrations, and festival events.</p>
+          <a href="services.html" class="text-primary font-semibold text-sm mt-3 inline-block hover:underline">Learn More →</a>
+        </div>
+
+        <div class="card fade-in delay-300">
+          <div class="card-icon bg-blue-100 text-blue-700">
+            <i class="fas fa-bullhorn text-xl"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold mb-2">Community Outreach</h3>
+          <p class="text-gray-600 text-sm">Awareness campaigns on elder rights, dignity, and intergenerational bonding.</p>
+          <a href="services.html" class="text-primary font-semibold text-sm mt-3 inline-block hover:underline">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="section-title font-heading">Words From Our Community</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+        <div class="relative">
+          <div class="testimonial-track">
+            <div class="testimonial-card">
+              <i class="fas fa-quote-left text-3xl text-primary/20 mb-4"></i>
+              <p class="testimonial-text">"My mother found a second family at Jeevan Ankur. The care, warmth, and respect she receives every day brings us immense peace of mind. They truly treat every elder like their own."</p>
+              <p class="testimonial-author">— Priya Sharma, Daughter of Resident</p>
+            </div>
+            <div class="testimonial-card">
+              <i class="fas fa-quote-left text-3xl text-primary/20 mb-4"></i>
+              <p class="testimonial-text">"Volunteering at the Vridhashram has been one of the most fulfilling experiences. The joy on the elders' faces during festivals and activities is priceless. This foundation is doing God's work."</p>
+              <p class="testimonial-author">— Rahul Mehta, Regular Volunteer</p>
+            </div>
+            <div class="testimonial-card">
+              <i class="fas fa-quote-left text-3xl text-primary/20 mb-4"></i>
+              <p class="testimonial-text">"I was alone after losing my spouse, but Jeevan Ankur gave me a home full of friends, laughter, and care. The staff treats us with so much love — I feel blessed every day."</p>
+              <p class="testimonial-author">— Kamla Tai, Respected Resident</p>
+            </div>
+          </div>
+
+          <!-- Nav Arrows -->
+          <button class="testimonial-prev absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary/20 transition" aria-label="Previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="testimonial-next absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary/20 transition" aria-label="Next testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- Dots -->
+        <div class="flex justify-center gap-3 pb-6">
+          <button class="testimonial-dot active" aria-label="Slide 1"></button>
+          <button class="testimonial-dot" aria-label="Slide 2"></button>
+          <button class="testimonial-dot" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="relative py-20 px-4 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary to-accent"></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Every Elder Deserves a Loving Home</h2>
+      <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+        Your support — whether a donation, volunteer time, or simply spreading the word — can transform the life of a senior citizen in need.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="donate.html" class="btn-secondary">
+          <i class="fas fa-hand-holding-heart"></i> Make a Donation
+        </a>
+        <a href="contact.html" class="btn-secondary">
+          <i class="fas fa-handshake"></i> Volunteer With Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- About -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
+            <span class="font-heading font-bold text-lg">Jeevan Ankur</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">
+            Providing care, love, dignity, and a safe, family-like environment for senior citizens at our Vridhashram in Mumbai.
+          </p>
+          <div class="footer-social flex gap-3">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918169615400" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="old-age-home.html">Our Old Age Home</a>
+          <a href="services.html">Services</a>
+          <a href="activities.html">Activities & Events</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Support</h4>
+          <a href="donate.html">Donate Now</a>
+          <a href="donate.html#volunteer">Volunteer</a>
+          <a href="donate.html#in-kind">In-Kind Donations</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm text-white/70">
+            <p class="flex items-start gap-3">
+              <i class="fas fa-location-dot text-primary mt-1"></i>
+              <span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span>
+            </p>
+            <p class="flex items-center gap-3">
+              <i class="fas fa-phone text-primary"></i>
+              <a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a>
+            </p>
+            <p class="flex items-center gap-3">
+              <i class="fas fa-envelope text-primary"></i>
+              <a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <!-- WhatsApp -->
+  <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities & Events | Jeevan Ankur Seva Foundation</title>
+  <meta name="description" content="Discover our daily activities, festival celebrations, and upcoming events that enrich the lives of senior citizens at Jeevan Ankur Old Age Home.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E8722A',
+            'primary-dark': '#C85E1F',
+            secondary: '#1A6B5C',
+            'secondary-dark': '#145549',
+            accent: '#F5A623',
+            cream: '#FFF8F0',
+            charcoal: '#2D2D2D',
+            'light-gray': '#F5F0EB',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+
+<!-- NAVIGATION -->
+<nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+            <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
+          <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
+          <a href="services.html" class="nav-link text-sm font-medium text-charcoal">Services</a>
+          <a href="activities.html" class="nav-link text-sm font-medium text-charcoal">Activities</a>
+          <a href="gallery.html" class="nav-link text-sm font-medium text-charcoal">Gallery</a>
+          <a href="team.html" class="nav-link text-sm font-medium text-charcoal">Our Team</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
+          <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        </div>
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
+        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
+        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
+        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
+        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
+        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
+        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
+        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
+        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
+          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- HERO BANNER -->
+<section class="pt-20">
+  <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: url('assets/images/festival-birthday.jpg.jpeg'); background-size: cover; background-position: center;"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4">Activities & Events</h1>
+      <p class="text-white/80 text-lg">Enriching daily life with joy, spiritual connection, and vibrant community celebrations.</p>
+      <div class="flex justify-center gap-2 mt-6 text-sm text-white/60">
+        <a href="index.html" class="hover:text-accent transition">Home</a>
+        <span>/</span>
+        <span class="text-accent">Activities</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAILY ACTIVITIES -->
+<section class="py-16 bg-cream">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">A Day in the Life</h2>
+      <p class="text-charcoal/70 max-w-2xl mx-auto">Our structured routine blends physical wellness, mental engagement, and spiritual peace, ensuring our residents stay active and joyful.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Activity 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-t-4 border-primary fade-in delay-100">
+        <div class="w-14 h-14 bg-light-gray rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-om text-2xl text-primary"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold mb-3">Morning Yoga & Meditation</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Gentle stretching and breathing exercises led by experienced instructors to start the day with peace and vitality.</p>
+      </div>
+      <!-- Activity 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-t-4 border-secondary fade-in delay-200">
+        <div class="w-14 h-14 bg-light-gray rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-palette text-2xl text-secondary"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold mb-3">Art & Craft Sessions</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Creative expressions through painting, drawing, and simple crafts to enhance fine motor skills and imagination.</p>
+      </div>
+      <!-- Activity 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-t-4 border-accent fade-in delay-300">
+        <div class="w-14 h-14 bg-light-gray rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-music text-2xl text-accent"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold mb-3">Music & Bhajan Evenings</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Soulful evening gatherings for singing traditional bhajans and kirtans, bringing immense joy and spiritual solace.</p>
+      </div>
+      <!-- Activity 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-t-4 border-primary fade-in delay-400">
+        <div class="w-14 h-14 bg-light-gray rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-chess-board text-2xl text-primary"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold mb-3">Board Games & Cards</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Friendly matches of chess, carrom, and card games to promote mental agility and healthy social interaction.</p>
+      </div>
+      <!-- Activity 5 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-t-4 border-secondary fade-in delay-500">
+        <div class="w-14 h-14 bg-light-gray rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-book-open text-2xl text-secondary"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold mb-3">Storytelling Circles</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Sharing lifetime experiences and reciting tales that foster deep connections and intergenerational wisdom sharing.</p>
+      </div>
+      <!-- Activity 6 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-t-4 border-accent fade-in delay-500">
+        <div class="w-14 h-14 bg-light-gray rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-leaf text-2xl text-accent"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold mb-3">Garden & Nature Time</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Enjoying fresh air with supervised garden walks and light gardening to keep in touch with nature's therapeutic benefits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FESTIVAL CELEBRATIONS -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Festival Celebrations</h2>
+      <p class="text-charcoal/70 max-w-2xl mx-auto">We celebrate every major festival with zeal, ensuring our elders feel the warmth and festivity of a large, loving family.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="group relative overflow-hidden rounded-xl shadow-md h-64 fade-in">
+        <img src="assets/images/festival-birthday.jpg.jpeg" alt="Diwali Celebration" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white font-heading text-xl font-bold mb-1">Diwali - Festival of Lights</h3>
+          <p class="text-white/80 text-sm">Decorating with diyas, making vibrant rangolis, and sharing traditional sweets.</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-xl shadow-md h-64 fade-in delay-100">
+        <img src="assets/images/elders-2.jpg.jpeg" alt="Holi Celebration" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white font-heading text-xl font-bold mb-1">Holi</h3>
+          <p class="text-white/80 text-sm">Joyful celebration with organic colors, music, and festive delicacies.</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-xl shadow-md h-64 fade-in delay-200">
+        <img src="assets/images/team.jpg.jpeg" alt="Raksha Bandhan" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white font-heading text-xl font-bold mb-1">Raksha Bandhan</h3>
+          <p class="text-white/80 text-sm">Tying rakhis to symbolize love, protection, and strong familial bonds.</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-xl shadow-md h-64 fade-in">
+        <img src="assets/images/festival-rakhi.jpg.jpeg" alt="Navratri" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white font-heading text-xl font-bold mb-1">Navratri & Garba</h3>
+          <p class="text-white/80 text-sm">Devotional songs, aarti, and gentle garba to honor the divine feminine.</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-xl shadow-md h-64 fade-in delay-100">
+        <img src="assets/images/team.jpg.jpeg" alt="Independence Day" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white font-heading text-xl font-bold mb-1">National Days</h3>
+          <p class="text-white/80 text-sm">Patriotic fervor with flag hoisting on Independence and Republic Day.</p>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-xl shadow-md h-64 fade-in delay-200">
+        <img src="assets/images/elders-1.jpeg" alt="Birthdays" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white font-heading text-xl font-bold mb-1">Birthdays</h3>
+          <p class="text-white/80 text-sm">Cake cutting, heartfelt gifts, and showering blessings on our residents' special days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUNTEER VISITS -->
+<section class="py-16 bg-light-gray">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div class="w-full lg:w-1/2 fade-in-left">
+        <img src="assets/images/team.jpg.jpeg" alt="Volunteer Visits" class="rounded-xl shadow-xl w-full h-auto">
+      </div>
+      <div class="w-full lg:w-1/2 fade-in-right">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">Welcoming Volunteers & Community</h2>
+        <p class="text-charcoal/70 mb-6 leading-relaxed">
+          The heart of Jeevan Ankur is deeply connected to our generous community. We frequently host volunteers from schools, colleges, and corporate organizations who spend quality time with our seniors.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <i class="fas fa-heart text-primary mt-1"></i>
+            <div>
+              <strong class="block text-charcoal font-medium">Companionship Programs</strong>
+              <span class="text-sm text-charcoal/70">Youth and adults spend afternoons simply talking, reading, or listening to the elders.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-utensils text-primary mt-1"></i>
+            <div>
+              <strong class="block text-charcoal font-medium">Special Meal Sponsorships</strong>
+              <span class="text-sm text-charcoal/70">Families often celebrate their own special occasions by sponsoring and serving special meals.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-theater-masks text-primary mt-1"></i>
+            <div>
+              <strong class="block text-charcoal font-medium">Entertainment Sessions</strong>
+              <span class="text-sm text-charcoal/70">Local artists and groups perform music, drama, and comedy to entertain our residents.</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-notes-medical text-primary mt-1"></i>
+            <div>
+              <strong class="block text-charcoal font-medium">Health Camps</strong>
+              <span class="text-sm text-charcoal/70">Medical professionals and corporate CSR teams regularly organize specialized health check-ups.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING EVENTS -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="font-heading text-3xl font-bold mb-4">Upcoming Events</h2>
+      <p class="text-charcoal/70">Join us in making these upcoming days special for our elders.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition duration-300 fade-in delay-100">
+        <div class="text-primary font-bold text-lg mb-2">October 24, 2026</div>
+        <h3 class="font-heading text-xl font-bold mb-3">Grand Diwali Celebration</h3>
+        <p class="text-charcoal/70 text-sm mb-4">Join us for a spectacular evening of diya lighting, rangoli making, and festive feast with our elders.</p>
+        <a href="contact.html" class="text-secondary font-medium hover:text-secondary-dark text-sm inline-flex items-center gap-1">RSVP / Volunteer <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition duration-300 fade-in delay-200">
+        <div class="text-primary font-bold text-lg mb-2">November 10, 2026</div>
+        <h3 class="font-heading text-xl font-bold mb-3">Free Eye Check-up Camp</h3>
+        <p class="text-charcoal/70 text-sm mb-4">A comprehensive vision screening camp organized in collaboration with local ophthalmologists.</p>
+        <a href="contact.html" class="text-secondary font-medium hover:text-secondary-dark text-sm inline-flex items-center gap-1">Sponsor Event <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition duration-300 fade-in delay-300">
+        <div class="text-primary font-bold text-lg mb-2">December 5, 2026</div>
+        <h3 class="font-heading text-xl font-bold mb-3">Winter Warmth Drive</h3>
+        <p class="text-charcoal/70 text-sm mb-4">Distribution of warm blankets and sweaters to residents, followed by a hot soup and music evening.</p>
+        <a href="contact.html" class="text-secondary font-medium hover:text-secondary-dark text-sm inline-flex items-center gap-1">Donate Blankets <i class="fas fa-arrow-right text-xs"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO HIGHLIGHTS -->
+<section class="py-16 bg-cream">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+    <h2 class="font-heading text-3xl font-bold mb-8">Glimpses of Joy</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <img src="assets/images/festival-birthday.jpg.jpeg" alt="Meal time" class="w-full h-48 object-cover rounded-lg">
+      <img src="assets/images/team.jpg.jpeg" alt="Elder care" class="w-full h-48 object-cover rounded-lg">
+      <img src="assets/images/festival-rakhi.jpg.jpeg" alt="Gardening" class="w-full h-48 object-cover rounded-lg">
+      <img src="assets/images/elders-2.jpg.jpeg" alt="Reading" class="w-full h-48 object-cover rounded-lg">
+    </div>
+    <a href="gallery.html" class="btn-outline inline-block">View Full Gallery <i class="fas fa-images ml-2"></i></a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-secondary text-white text-center">
+  <div class="max-w-3xl mx-auto px-4 fade-in">
+    <h2 class="font-heading text-3xl font-bold mb-4">Want to be part of our activities?</h2>
+    <p class="text-white/80 mb-8">Your time is the most valuable gift you can offer. Spend a few hours with our elders and make a lasting impact on their lives.</p>
+    <a href="donate.html#volunteer" class="btn-primary bg-white text-secondary hover:bg-cream">Volunteer With Us <i class="fas fa-hand-holding-heart ml-2"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
+            <span class="font-heading font-bold text-lg">Jeevan Ankur</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">Providing care, love, dignity, and a safe, family-like environment for senior citizens at our Vridhashram in Mumbai.</p>
+          <div class="footer-social flex gap-3">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918169615400" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="old-age-home.html">Our Old Age Home</a>
+          <a href="services.html">Services</a>
+          <a href="activities.html">Activities & Events</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Support</h4>
+          <a href="donate.html">Donate Now</a>
+          <a href="donate.html#volunteer">Volunteer</a>
+          <a href="donate.html#in-kind">In-Kind Donations</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm text-white/70">
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

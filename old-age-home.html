@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Old Age Home | Jeevan Ankur Seva Foundation</title>
+  <meta name="description" content="Discover our Vridhashram in Kurla East, Mumbai. A safe, comfortable, and loving home for senior citizens with dedicated care and medical support.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E8722A',
+            'primary-dark': '#C85E1F',
+            secondary: '#1A6B5C',
+            'secondary-dark': '#145549',
+            accent: '#F5A623',
+            cream: '#FFF8F0',
+            charcoal: '#2D2D2D',
+            'light-gray': '#F5F0EB',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+
+  <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+            <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
+          <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
+          <a href="services.html" class="nav-link text-sm font-medium text-charcoal">Services</a>
+          <a href="activities.html" class="nav-link text-sm font-medium text-charcoal">Activities</a>
+          <a href="gallery.html" class="nav-link text-sm font-medium text-charcoal">Gallery</a>
+          <a href="team.html" class="nav-link text-sm font-medium text-charcoal">Our Team</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
+          <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        </div>
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
+        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
+        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
+        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
+        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
+        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
+        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
+        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
+        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
+          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-20">
+    <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('assets/images/elders-2.jpg.jpeg'); background-size: cover; background-position: center;"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto">
+        <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4">Our Old Age Home (Vridhashram)</h1>
+        <p class="text-white/80 text-lg">A haven of peace, comfort, and dignified living</p>
+        <div class="flex justify-center gap-2 mt-6 text-sm text-white/60">
+          <a href="index.html" class="hover:text-accent transition">Home</a>
+          <span>/</span>
+          <span class="text-accent">Our Old Age Home</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Facility Overview Section -->
+    <section class="py-16 md:py-24 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="fade-in-left">
+            <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">A Warm Welcome to Our Home</h2>
+            <div class="section-divider w-16 h-1 bg-primary mb-6"></div>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Located in the heart of Kurla East, Mumbai, the Jeevan Ankur Vridhashram is thoughtfully designed to provide a serene, safe, and comfortable living space for our elders. Our facility isn't just a building; it is a vibrant community filled with laughter, shared stories, and dedicated care.
+            </p>
+            <div class="bg-light-gray p-6 rounded-lg border-l-4 border-primary mb-6">
+              <h4 class="font-bold text-charcoal mb-2"><i class="fas fa-map-marker-alt text-primary mr-2"></i> Our Location</h4>
+              <p class="text-sm text-gray-600">
+                67 D Bungalow (behind Madhav Baugh Clinic), Kamghar Nagar,<br>
+                beside Shreeram Co-operative Society, Sidheswar Building,<br>
+                Kurla East, Mumbai, Maharashtra 400024.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 fade-in-right">
+            <img src="assets/images/elders-1.jpeg" alt="Medical Care" class="rounded-lg shadow-md w-full h-48 object-cover">
+            <img src="assets/images/team.jpg.jpeg" alt="Community Area" class="rounded-lg shadow-md w-full h-48 object-cover mt-8">
+            <img src="assets/images/festival-birthday.jpg.jpeg" alt="Dining" class="rounded-lg shadow-md w-full h-48 object-cover -mt-8">
+            <img src="assets/images/festival-rakhi.jpg.jpeg" alt="Garden Area" class="rounded-lg shadow-md w-full h-48 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Living Spaces -->
+    <section class="py-16 md:py-24 px-4 bg-light-gray">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Living Spaces</h2>
+          <div class="section-divider w-16 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition fade-in delay-100">
+            <div class="h-48 bg-gray-200">
+              <img src="assets/images/elders-2.jpg.jpeg" alt="Shared Rooms" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-3 flex items-center gap-2"><i class="fas fa-bed text-primary"></i> Shared Rooms</h3>
+              <p class="text-sm text-gray-600">Comfortable, well-ventilated multi-bed rooms designed for restful sleep, complete with individual storage spaces and easily accessible amenities.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition fade-in delay-200">
+            <div class="h-48 bg-gray-200">
+              <img src="assets/images/festival-birthday.jpg.jpeg" alt="Common Areas" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-3 flex items-center gap-2"><i class="fas fa-couch text-primary"></i> Common Areas</h3>
+              <p class="text-sm text-gray-600">Inviting spaces including a TV lounge, a serene prayer room for spiritual reflection, and an accessible garden for relaxing walks.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition fade-in delay-300">
+            <div class="h-48 bg-gray-200">
+              <img src="assets/images/festival-birthday.jpg.jpeg" alt="Dining Hall" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-3 flex items-center gap-2"><i class="fas fa-utensils text-primary"></i> Dining Hall</h3>
+              <p class="text-sm text-gray-600">A spacious communal dining area where residents gather to enjoy nutritious, freshly prepared vegetarian meals together as a family.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Routine -->
+    <section class="py-16 md:py-24 px-4 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">A Day in the Life</h2>
+          <div class="section-divider w-16 h-1 bg-primary mx-auto"></div>
+          <p class="mt-4 text-gray-600">Our structured yet flexible routine keeps residents active, engaged, and healthy.</p>
+        </div>
+        
+        <div class="bg-cream rounded-2xl p-6 md:p-10 shadow-sm border border-gray-100 fade-in">
+          <div class="grid md:grid-cols-2 gap-x-12 gap-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">6:00 AM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Wake up & morning prayers</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">2:00 PM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Rest / personal time</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">7:00 AM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Morning yoga & light exercise</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">4:00 PM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Evening tea & snacks</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">8:00 AM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Nutritious Breakfast</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">4:30 PM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Outdoor activities / garden walk</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">10:00 AM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Doctor rounds / medical check-up</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">6:00 PM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Evening prayers & Aarti</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">11:00 AM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Indoor activities (reading, board games, TV)</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">7:30 PM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Communal Dinner</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">12:30 PM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Wholesome Lunch</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-16 flex-shrink-0 text-right"><span class="font-bold text-secondary">9:00 PM</span></div>
+              <div class="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0"></div>
+              <div><p class="text-gray-700">Lights out & restful sleep</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety & Hygiene -->
+    <section class="py-16 bg-secondary text-white px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-heading font-bold text-center mb-12 fade-in">Safety, Health & Hygiene Standards</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+          <div class="flex flex-col items-center fade-in delay-100">
+            <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4"><i class="fas fa-user-nurse text-2xl text-accent"></i></div>
+            <span class="text-sm">24/7 Staff Presence</span>
+          </div>
+          <div class="flex flex-col items-center fade-in delay-200">
+            <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4"><i class="fas fa-broom text-2xl text-accent"></i></div>
+            <span class="text-sm">Sanitized Spaces</span>
+          </div>
+          <div class="flex flex-col items-center fade-in delay-300">
+            <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4"><i class="fas fa-ambulance text-2xl text-accent"></i></div>
+            <span class="text-sm">Emergency Medical Access</span>
+          </div>
+          <div class="flex flex-col items-center fade-in delay-400">
+            <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4"><i class="fas fa-fire-extinguisher text-2xl text-accent"></i></div>
+            <span class="text-sm">Fire Safety Compliant</span>
+          </div>
+          <div class="flex flex-col items-center fade-in delay-500">
+            <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4"><i class="fas fa-wind text-2xl text-accent"></i></div>
+            <span class="text-sm">Proper Ventilation</span>
+          </div>
+          <div class="flex flex-col items-center fade-in delay-500">
+            <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4"><i class="fas fa-apple-alt text-2xl text-accent"></i></div>
+            <span class="text-sm">Certified Hygienic Kitchen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="py-16 md:py-24 px-4 bg-light-gray">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+          <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Admission Process</h2>
+          <div class="section-divider w-16 h-1 bg-primary mx-auto"></div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-center items-start gap-8 relative max-w-4xl mx-auto">
+          <!-- Connectors for Desktop -->
+          <div class="hidden md:block absolute top-8 left-[15%] right-[15%] h-0.5 bg-gray-300 -z-10"></div>
+          
+          <div class="flex-1 text-center fade-in delay-100 bg-white p-6 rounded-xl shadow-sm z-10 w-full md:w-auto">
+            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-md">1</div>
+            <h4 class="font-bold text-lg mb-2">Contact Us</h4>
+            <p class="text-sm text-gray-600">Reach out via phone, email, or schedule an initial visit to express interest.</p>
+          </div>
+          <div class="flex-1 text-center fade-in delay-200 bg-white p-6 rounded-xl shadow-sm z-10 w-full md:w-auto">
+            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-md">2</div>
+            <h4 class="font-bold text-lg mb-2">Visit & Consult</h4>
+            <p class="text-sm text-gray-600">Meet our team, tour the facility, and discuss specific medical or personal needs.</p>
+          </div>
+          <div class="flex-1 text-center fade-in delay-300 bg-white p-6 rounded-xl shadow-sm z-10 w-full md:w-auto">
+            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-md">3</div>
+            <h4 class="font-bold text-lg mb-2">Welcome Home</h4>
+            <p class="text-sm text-gray-600">Complete formalities and experience a smooth, welcoming transition into the home.</p>
+          </div>
+        </div>
+        
+        <div class="mt-12 max-w-3xl mx-auto bg-blue-50 p-6 rounded-lg border border-blue-100 text-center fade-in">
+          <p class="text-sm text-blue-800"><i class="fas fa-info-circle mr-2"></i> <strong>Eligibility Note:</strong> While priority is respectfully given to abandoned, destitute, or solitary senior citizens in need, we also welcome families seeking high-quality, compassionate care for their elderly members.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 md:py-24 px-4 bg-white">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-12 fade-in">
+          <h2 class="section-title text-3xl font-heading font-bold text-secondary mb-4">Frequently Asked Questions</h2>
+          <div class="section-divider w-16 h-1 bg-primary mx-auto"></div>
+        </div>
+        
+        <div class="accordion-group space-y-4 fade-in">
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition text-left focus:outline-none">
+              <span class="font-bold text-charcoal">What are the visiting hours?</span>
+              <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+            </button>
+            <div class="accordion-body hidden p-5 bg-white text-gray-600 text-sm border-t border-gray-200">
+              Family and friends are encouraged to visit! Standard visiting hours are from 10:00 AM to 1:00 PM and 4:00 PM to 7:00 PM to ensure residents have adequate time for rest and activities.
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition text-left focus:outline-none">
+              <span class="font-bold text-charcoal">Is medical care provided on-site?</span>
+              <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+            </button>
+            <div class="accordion-body hidden p-5 bg-white text-gray-600 text-sm border-t border-gray-200">
+              Yes, we have regular doctor visits for check-ups, and trained nursing staff are available 24/7 for daily medical needs and medication management. For emergencies, we have tie-ups with nearby hospitals.
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition text-left focus:outline-none">
+              <span class="font-bold text-charcoal">Are there any charges for admission?</span>
+              <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+            </button>
+            <div class="accordion-body hidden p-5 bg-white text-gray-600 text-sm border-t border-gray-200">
+              Our services are heavily subsidized or free for completely destitute elders. For families wishing to admit their seniors, we have a nominal, transparent fee structure to cover care and sustenance costs. Please contact us directly for details.
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="accordion-header w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition text-left focus:outline-none">
+              <span class="font-bold text-charcoal">Can residents bring personal belongings?</span>
+              <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+            </button>
+            <div class="accordion-body hidden p-5 bg-white text-gray-600 text-sm border-t border-gray-200">
+              Absolutely. We encourage residents to bring personal items like photographs, small mementos, or specific comfortable clothing to make their space feel truly like home, provided it fits within the shared accommodations safely.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-primary text-white text-center">
+      <div class="max-w-3xl mx-auto fade-in">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-6">Looking for a safe home for an elder?</h2>
+        <p class="text-white/90 mb-8 text-lg">We are here to help. Reach out to discuss how we can support you or your loved ones.</p>
+        <a href="contact.html" class="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-colors shadow-lg">
+          Contact for Admission <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
+            <span class="font-heading font-bold text-lg">Jeevan Ankur</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">Providing care, love, dignity, and a safe, family-like environment for senior citizens at our Vridhashram in Mumbai.</p>
+          <div class="footer-social flex gap-3">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918169615400" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="old-age-home.html">Our Old Age Home</a>
+          <a href="services.html">Services</a>
+          <a href="activities.html">Activities & Events</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Support</h4>
+          <a href="donate.html">Donate Now</a>
+          <a href="donate.html#volunteer">Volunteer</a>
+          <a href="donate.html#in-kind">In-Kind Donations</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm text-white/70">
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script>
+    // Accordion script logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const body = header.nextElementSibling;
+          const icon = header.querySelector('i');
+          const isOpen = !body.classList.contains('hidden');
+          
+          // Close all others
+          document.querySelectorAll('.accordion-body').forEach(b => b.classList.add('hidden'));
+          document.querySelectorAll('.accordion-header i').forEach(i => i.classList.remove('rotate-180'));
+          
+          if (!isOpen) {
+            body.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

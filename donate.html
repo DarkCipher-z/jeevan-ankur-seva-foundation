@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate & Support Us | Jeevan Ankur Seva Foundation</title>
+  <meta name="description" content="Support Jeevan Ankur Seva Foundation. Your donations provide care, dignity, and a family-like environment for our senior citizens.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E8722A',
+            'primary-dark': '#C85E1F',
+            secondary: '#1A6B5C',
+            'secondary-dark': '#145549',
+            accent: '#F5A623',
+            cream: '#FFF8F0',
+            charcoal: '#2D2D2D',
+            'light-gray': '#F5F0EB',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+  <!-- Navigation -->
+  <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+            <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
+          <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
+          <a href="services.html" class="nav-link text-sm font-medium text-charcoal">Services</a>
+          <a href="activities.html" class="nav-link text-sm font-medium text-charcoal">Activities</a>
+          <a href="gallery.html" class="nav-link text-sm font-medium text-charcoal">Gallery</a>
+          <a href="team.html" class="nav-link text-sm font-medium text-charcoal">Our Team</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
+          <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        </div>
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
+        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
+        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
+        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
+        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
+        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
+        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
+        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
+        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
+          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero Banner -->
+  <section class="pt-20">
+    <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('assets/images/elders-1.jpeg'); background-size: cover; background-position: center;"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto fade-in">
+        <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4">Donate & Support Us</h1>
+        <p class="text-white/80 text-lg">Your generosity gives our elders a life of dignity</p>
+        <div class="flex justify-center gap-2 mt-6 text-sm text-white/60">
+          <a href="index.html" class="hover:text-accent transition">Home</a>
+          <span>/</span>
+          <span class="text-accent">Donate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emotional Appeal & Stats -->
+  <section class="py-16 md:py-24 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div class="fade-in-left">
+          <h2 class="section-title text-3xl font-bold font-heading mb-6 text-secondary">Every Contribution Makes a Difference</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            At Jeevan Ankur Seva Foundation, we believe that every elderly person deserves to live their twilight years with respect, love, and a sense of belonging. Many of our residents come to us after facing abandonment or severe hardship. Your contribution helps us provide them with more than just a shelter; it provides them with a warm, family-like home.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed">
+            When you donate, you are directly funding nutritious meals, vital healthcare and medicines, comfortable living arrangements, and recreational activities that keep our elders joyful and engaged.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="card p-6 text-center border border-gray-100 rounded-xl bg-cream">
+              <div class="stat-number text-3xl font-bold text-primary mb-2" data-count="45" data-suffix="+">45+</div>
+              <div class="stat-label text-sm font-medium text-gray-700">Elders Currently Sheltered</div>
+            </div>
+            <div class="card p-6 text-center border border-gray-100 rounded-xl bg-cream">
+              <div class="stat-number text-3xl font-bold text-primary mb-2" data-count="135" data-suffix="+">135+</div>
+              <div class="stat-label text-sm font-medium text-gray-700">Meals Served Daily</div>
+            </div>
+            <div class="card p-6 text-center border border-gray-100 rounded-xl bg-cream">
+              <div class="stat-number text-3xl font-bold text-primary mb-2" data-count="2" data-suffix="L+">₹2L+</div>
+              <div class="stat-label text-sm font-medium text-gray-700">Monthly Operating Cost</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in-right relative">
+          <img src="assets/images/elders-2.jpg.jpeg" alt="Elders smiling together" class="rounded-2xl shadow-xl w-full object-cover h-[500px]">
+          <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg max-w-xs">
+            <p class="italic text-gray-700 font-medium">"Your kindness is the reason our elders wake up with a smile."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Tiers -->
+  <section class="py-16 md:py-24 px-4 bg-light-gray">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="section-title text-3xl font-bold font-heading mb-4 text-secondary fade-in">Choose Your Impact</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mb-16 fade-in delay-100">Select a donation tier that resonates with you and make an immediate difference in the lives of our respected residents.</p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Tier 1 -->
+        <div class="donation-tier card bg-white p-8 rounded-2xl shadow-md border-t-4 border-primary fade-in delay-200">
+          <h3 class="text-xl font-bold text-secondary mb-2">Nourish</h3>
+          <div class="donation-amount text-4xl font-bold text-primary my-6">₹500</div>
+          <p class="text-gray-600 mb-8 h-20">Sponsor nutritious fruits and healthy snacks for all residents for a day.</p>
+          <a href="#payment-methods" class="btn-outline w-full text-center py-3 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-medium block">Donate This Amount</a>
+        </div>
+        
+        <!-- Tier 2 (Featured) -->
+        <div class="donation-tier featured card bg-white p-8 rounded-2xl shadow-xl border-t-4 border-accent relative transform md:-translate-y-4 fade-in delay-300">
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-accent text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">Most Needed</div>
+          <h3 class="text-xl font-bold text-secondary mb-2">Care</h3>
+          <div class="donation-amount text-4xl font-bold text-accent my-6">₹1,000</div>
+          <p class="text-gray-600 mb-8 h-20">Cover a week of essential medicines and medical supplies for a senior citizen.</p>
+          <a href="#payment-methods" class="btn-accent w-full text-center py-3 rounded-lg bg-accent text-white hover:bg-yellow-500 transition font-medium shadow-md block">Donate This Amount</a>
+        </div>
+        
+        <!-- Tier 3 -->
+        <div class="donation-tier card bg-white p-8 rounded-2xl shadow-md border-t-4 border-primary fade-in delay-400">
+          <h3 class="text-xl font-bold text-secondary mb-2">Shelter</h3>
+          <div class="donation-amount text-4xl font-bold text-primary my-6">₹5,000</div>
+          <p class="text-gray-600 mb-8 h-20">Support one month of safe accommodation, meals, and daily care for an elder.</p>
+          <a href="#payment-methods" class="btn-outline w-full text-center py-3 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-medium block">Donate This Amount</a>
+        </div>
+        
+        <!-- Tier 4 -->
+        <div class="donation-tier card bg-white p-8 rounded-2xl shadow-md border-t-4 border-gray-400 fade-in delay-500">
+          <h3 class="text-xl font-bold text-secondary mb-2">Your Choice</h3>
+          <div class="donation-amount text-4xl font-bold text-gray-700 my-6">Any ₹</div>
+          <p class="text-gray-600 mb-8 h-20">Every rupee counts. Donate any amount you wish to contribute towards our mission.</p>
+          <a href="#payment-methods" class="btn-outline w-full text-center py-3 rounded-lg border-2 border-gray-400 text-gray-600 hover:bg-gray-100 transition font-medium block">Donate Custom Amount</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Donate -->
+  <section id="payment-methods" class="py-16 md:py-24 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="section-title text-3xl font-bold font-heading mb-4 text-secondary">How to Donate</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Choose a convenient payment method to send your support.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- UPI -->
+        <div class="card p-8 rounded-2xl shadow-md border border-gray-100 bg-cream text-center fade-in delay-100">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-qrcode text-2xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-4">UPI / QR Code</h3>
+          <div class="bg-white p-4 rounded-xl shadow-inner mb-4 inline-block border border-gray-200">
+            <div class="w-40 h-40 bg-gray-100 flex items-center justify-center text-gray-400 rounded-lg">
+              <i class="fas fa-qrcode text-6xl"></i>
+            </div>
+          </div>
+          <p class="text-sm text-gray-600 font-medium mb-2">Scan to Pay via UPI</p>
+          <p class="text-sm font-bold text-charcoal bg-white py-2 px-4 rounded-lg inline-block border border-gray-200">jeevanankur@upi</p>
+        </div>
+        
+        <!-- Bank Transfer -->
+        <div class="card p-8 rounded-2xl shadow-md border border-gray-100 bg-cream text-center fade-in delay-200">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-university text-2xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-6">Bank Transfer</h3>
+          <div class="text-left bg-white p-6 rounded-xl shadow-inner border border-gray-200 space-y-3 mb-4">
+            <p class="text-sm"><span class="text-gray-500 font-medium">Account Name:</span><br><span class="font-bold text-charcoal">Jeevan Ankur Seva Foundation</span></p>
+            <p class="text-sm"><span class="text-gray-500 font-medium">Bank:</span><br><span class="font-bold text-charcoal">[Bank Name]</span></p>
+            <p class="text-sm"><span class="text-gray-500 font-medium">A/C No:</span><br><span class="font-bold text-charcoal">[XXXXXXXXXXXX]</span></p>
+            <p class="text-sm"><span class="text-gray-500 font-medium">IFSC:</span><br><span class="font-bold text-charcoal">[XXXXXXXXXXX]</span></p>
+            <p class="text-sm"><span class="text-gray-500 font-medium">Branch:</span><br><span class="font-bold text-charcoal">[Branch Name]</span></p>
+          </div>
+          <p class="text-xs text-primary font-medium italic mt-4"><i class="fas fa-info-circle mr-1"></i>Please contact us for verified bank details</p>
+        </div>
+        
+        <!-- Online -->
+        <div class="card p-8 rounded-2xl shadow-md border border-gray-100 bg-cream text-center fade-in delay-300">
+          <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-credit-card text-2xl text-gray-500"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-600 mb-4">Online Payment</h3>
+          <div class="flex flex-col items-center justify-center h-48 bg-white rounded-xl border border-gray-200 border-dashed p-6">
+            <i class="fas fa-tools text-3xl text-gray-400 mb-4"></i>
+            <p class="text-gray-500 font-medium text-center">Coming Soon</p>
+            <p class="text-sm text-gray-400 text-center mt-2">Online payment gateway integration is in progress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 80G Tax Benefits -->
+  <section id="tax-benefits" class="py-16 px-4 bg-secondary text-white relative overflow-hidden">
+    <div class="absolute right-0 top-0 opacity-5">
+      <i class="fas fa-file-invoice-dollar text-[20rem]"></i>
+    </div>
+    <div class="max-w-4xl mx-auto relative z-10 text-center fade-in">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-6">
+        <i class="fas fa-receipt text-2xl text-accent"></i>
+      </div>
+      <h2 class="text-3xl font-bold font-heading mb-6">80G Tax Exemption Benefits</h2>
+      <p class="text-lg text-white/90 mb-6 leading-relaxed">
+        Your contributions to Jeevan Ankur Seva Foundation are eligible for tax deductions under Section 80G of the Income Tax Act, 1961. 
+      </p>
+      <p class="text-white/80 mb-8">
+        Upon successful donation, donors will receive an official 80G receipt which can be used to claim tax benefits during income tax filing. The foundation's 80G registration details and PAN will be provided upon request and printed on your official receipt.
+      </p>
+      <a href="contact.html" class="inline-block border-2 border-white text-white hover:bg-white hover:text-secondary px-8 py-3 rounded-lg font-medium transition duration-300">Request 80G Details</a>
+    </div>
+  </section>
+
+  <!-- Sponsorship Programs -->
+  <section class="py-16 md:py-24 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="section-title text-3xl font-bold font-heading mb-4 text-secondary">Sponsorship Programs</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Commit to long-term support through our dedicated sponsorship initiatives.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card border border-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow fade-in delay-100">
+          <div class="bg-primary/10 py-8 px-6 text-center border-b border-gray-100">
+            <h3 class="text-xl font-bold text-charcoal mb-2">Sponsor a Meal</h3>
+            <div class="text-3xl font-bold text-primary">₹3,500<span class="text-sm text-gray-500 font-normal">/month</span></div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-6 text-sm">Provide wholesome, nutritious meals for our residents. Your sponsorship ensures they receive balanced diets tailored to their health needs.</p>
+            <a href="contact.html" class="btn-outline w-full text-center block text-primary border-primary hover:bg-primary hover:text-white rounded-lg py-2 transition">Inquire Now</a>
+          </div>
+        </div>
+        
+        <div class="card border border-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow fade-in delay-200">
+          <div class="bg-secondary/10 py-8 px-6 text-center border-b border-gray-100">
+            <h3 class="text-xl font-bold text-charcoal mb-2">Sponsor a Resident</h3>
+            <div class="text-3xl font-bold text-secondary">₹7,500<span class="text-sm text-gray-500 font-normal">/month</span></div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-6 text-sm">Take full responsibility for one elder's living, medical, and emotional needs. Build a special bond and receive regular updates on their well-being.</p>
+            <a href="contact.html" class="btn-outline w-full text-center block text-secondary border-secondary hover:bg-secondary hover:text-white rounded-lg py-2 transition">Inquire Now</a>
+          </div>
+        </div>
+        
+        <div class="card border border-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow fade-in delay-300">
+          <div class="bg-accent/10 py-8 px-6 text-center border-b border-gray-100">
+            <h3 class="text-xl font-bold text-charcoal mb-2">Sponsor an Event</h3>
+            <div class="text-3xl font-bold text-accent">₹15,000+</div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-6 text-sm">Bring joy by sponsoring festival celebrations, birthdays, or cultural programs. Help us create beautiful memories for our elders.</p>
+            <a href="contact.html" class="btn-outline w-full text-center block text-accent border-accent hover:bg-accent hover:text-white rounded-lg py-2 transition">Inquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Kind Donations -->
+  <section id="in-kind" class="py-16 md:py-24 px-4 bg-light-gray">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="fade-in-left">
+          <img src="assets/images/festival-birthday.jpg.jpeg" alt="Groceries and supplies" class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
+        </div>
+        <div class="fade-in-right">
+          <h2 class="section-title text-3xl font-bold font-heading mb-6 text-secondary">In-Kind Donations</h2>
+          <p class="text-gray-600 mb-8">
+            Apart from financial support, we highly appreciate material contributions that directly benefit our elders' daily lives. You can donate the following items:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <i class="fas fa-utensils text-primary mt-1"></i>
+              <span class="text-sm font-medium text-gray-700">Rice, Dal, Cooking Oil, Spices</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <i class="fas fa-first-aid text-primary mt-1"></i>
+              <span class="text-sm font-medium text-gray-700">Medicines & First Aid Supplies</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <i class="fas fa-bed text-primary mt-1"></i>
+              <span class="text-sm font-medium text-gray-700">Bedsheets, Blankets, Pillows</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <i class="fas fa-tshirt text-primary mt-1"></i>
+              <span class="text-sm font-medium text-gray-700">Clothing (especially for seniors)</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <i class="fas fa-wheelchair text-primary mt-1"></i>
+              <span class="text-sm font-medium text-gray-700">Walking aids, Wheelchairs</span>
+            </div>
+            <div class="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm">
+              <i class="fas fa-book-open text-primary mt-1"></i>
+              <span class="text-sm font-medium text-gray-700">Books, Newspapers, Magazines</span>
+            </div>
+          </div>
+          <div class="bg-secondary/10 p-6 rounded-xl border border-secondary/20">
+            <h4 class="font-bold text-secondary mb-2 flex items-center gap-2"><i class="fas fa-truck"></i> Drop-off Details</h4>
+            <p class="text-sm text-gray-700 mb-2">Please drop off your donations at our facility:</p>
+            <p class="text-sm font-medium text-charcoal mb-4">67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai - 400024</p>
+            <a href="tel:+918169615400" class="text-primary font-bold hover:underline text-sm"><i class="fas fa-phone mr-1"></i> Call +91 8169615400 to coordinate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Section -->
+  <section id="volunteer" class="py-16 md:py-24 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="section-title text-3xl font-bold font-heading mb-4 text-secondary">Volunteer With Us</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Give the most precious gift of all — your time. Spend moments of joy with our elders and become a part of their extended family.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-12">
+        <div class="lg:col-span-2 space-y-6 fade-in-left">
+          <img src="assets/images/team.jpg.jpeg" alt="Volunteers helping" class="rounded-2xl shadow-lg w-full h-64 object-cover mb-6">
+          <h3 class="text-xl font-bold font-heading text-charcoal mb-4">Ways to Volunteer:</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-cream rounded-full flex items-center justify-center shrink-0"><i class="fas fa-calendar-alt text-primary"></i></div>
+              <div>
+                <h4 class="font-bold text-sm text-charcoal">Weekend Visits</h4>
+                <p class="text-xs text-gray-600">Spend time talking, playing games, or reading to our residents.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-cream rounded-full flex items-center justify-center shrink-0"><i class="fas fa-stethoscope text-primary"></i></div>
+              <div>
+                <h4 class="font-bold text-sm text-charcoal">Medical Camps</h4>
+                <p class="text-xs text-gray-600">Doctors and nurses can volunteer for routine health checkups.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-cream rounded-full flex items-center justify-center shrink-0"><i class="fas fa-chalkboard-teacher text-primary"></i></div>
+              <div>
+                <h4 class="font-bold text-sm text-charcoal">Skill Sharing & Teaching</h4>
+                <p class="text-xs text-gray-600">Teach yoga, art, music, or basic digital literacy.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-cream rounded-full flex items-center justify-center shrink-0"><i class="fas fa-glass-cheers text-primary"></i></div>
+              <div>
+                <h4 class="font-bold text-sm text-charcoal">Event Organizing</h4>
+                <p class="text-xs text-gray-600">Help plan and execute festival celebrations and birthdays.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="lg:col-span-3 bg-cream p-8 rounded-2xl shadow-md border border-gray-100 fade-in-right">
+          <h3 class="text-2xl font-bold font-heading text-secondary mb-6">Volunteer Application Form</h3>
+          <form class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label text-sm font-medium text-gray-700 block mb-1">Full Name *</label>
+                <input type="text" class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label text-sm font-medium text-gray-700 block mb-1">Email Address *</label>
+                <input type="email" class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" required>
+              </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label text-sm font-medium text-gray-700 block mb-1">Phone Number *</label>
+                <input type="tel" class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label text-sm font-medium text-gray-700 block mb-1">Availability *</label>
+                <select class="form-select w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" required>
+                  <option value="" disabled selected>Select Availability</option>
+                  <option value="weekdays">Weekdays</option>
+                  <option value="weekends">Weekends</option>
+                  <option value="both">Both</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label text-sm font-medium text-gray-700 block mb-1">Area of Interest *</label>
+              <select class="form-select w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" required>
+                <option value="" disabled selected>Select Area of Interest</option>
+                <option value="visits">Weekend Visits & Companionship</option>
+                <option value="medical">Medical / Healthcare Support</option>
+                <option value="teaching">Teaching / Skill Sharing</option>
+                <option value="events">Event Organizing</option>
+                <option value="fundraising">Fundraising & Awareness</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label text-sm font-medium text-gray-700 block mb-1">Message / Tell us about yourself</label>
+              <textarea class="form-textarea w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition h-32 resize-none"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary w-full py-3 rounded-lg bg-primary text-white font-bold hover:bg-primary-dark transition shadow-md mt-4">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-12 px-4 bg-primary text-white text-center">
+    <div class="max-w-4xl mx-auto fade-in">
+      <h2 class="text-2xl md:text-3xl font-bold font-heading mb-4">Have questions about donating or volunteering?</h2>
+      <p class="text-white/90 mb-8 max-w-2xl mx-auto">Our team is ready to assist you. Contact us directly for any inquiries regarding corporate sponsorships, bulk donations, or specific volunteer programs.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:+918169615400" class="bg-white text-primary px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg flex items-center gap-2"><i class="fas fa-phone"></i> +91 8169615400</a>
+        <a href="mailto:jeevanankursevafoundation@gmail.com" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-primary transition flex items-center gap-2"><i class="fas fa-envelope"></i> Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
+            <span class="font-heading font-bold text-lg">Jeevan Ankur</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">Providing care, love, dignity, and a safe, family-like environment for senior citizens at our Vridhashram in Mumbai.</p>
+          <div class="footer-social flex gap-3">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918169615400" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="old-age-home.html">Our Old Age Home</a>
+          <a href="services.html">Services</a>
+          <a href="activities.html">Activities & Events</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Support</h4>
+          <a href="donate.html">Donate Now</a>
+          <a href="donate.html#volunteer">Volunteer</a>
+          <a href="donate.html#in-kind">In-Kind Donations</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm text-white/70">
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

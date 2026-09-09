@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Jeevan Ankur Seva Foundation</title>
+  <meta name="description" content="Glimpses of life, love, and togetherness at our Vridhashram">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E8722A',
+            'primary-dark': '#C85E1F',
+            secondary: '#1A6B5C',
+            'secondary-dark': '#145549',
+            accent: '#F5A623',
+            cream: '#FFF8F0',
+            charcoal: '#2D2D2D',
+            'light-gray': '#F5F0EB',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+
+  <!-- Navigation -->
+  <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+            <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
+          <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
+          <a href="services.html" class="nav-link text-sm font-medium text-charcoal">Services</a>
+          <a href="activities.html" class="nav-link text-sm font-medium text-charcoal">Activities</a>
+          <a href="gallery.html" class="nav-link text-sm font-medium text-charcoal">Gallery</a>
+          <a href="team.html" class="nav-link text-sm font-medium text-charcoal">Our Team</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
+          <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        </div>
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
+        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
+        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
+        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
+        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
+        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
+        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
+        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
+        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
+          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="pt-20">
+    <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('assets/images/elders-2.jpg.jpeg'); background-size: cover; background-position: center;"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto">
+        <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4 fade-in">Gallery</h1>
+        <p class="text-white/80 text-lg fade-in delay-100">Glimpses of life, love, and togetherness at our Vridhashram</p>
+        <div class="flex justify-center gap-2 mt-6 text-sm text-white/60 fade-in delay-200">
+          <a href="index.html" class="hover:text-accent transition">Home</a>
+          <span>/</span>
+          <span class="text-accent">Gallery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Gallery -->
+  <section class="py-16 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Filters -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in">
+        <button class="gallery-filter-btn px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition active" data-filter="all">All</button>
+        <button class="gallery-filter-btn px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition" data-filter="daily-life">Daily Life</button>
+        <button class="gallery-filter-btn px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition" data-filter="events">Events</button>
+        <button class="gallery-filter-btn px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition" data-filter="celebrations">Celebrations</button>
+        <button class="gallery-filter-btn px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition" data-filter="volunteers">Volunteers</button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" id="gallery-grid">
+        <!-- Daily Life 1 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in" data-category="daily-life">
+          <img src="assets/images/elders-2.jpg.jpeg" alt="Elderly reading in the library" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Daily Life 2 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-100" data-category="daily-life">
+          <img src="assets/images/festival-rakhi.jpg.jpeg" alt="Yoga and physical activities for seniors" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Daily Life 3 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-200" data-category="daily-life">
+          <img src="assets/images/festival-birthday.jpg.jpeg" alt="Nutritious meals provided at our home" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+
+        <!-- Events 1 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in" data-category="events">
+          <img src="assets/images/team.jpg.jpeg" alt="Group gathering in our main hall" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Events 2 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-100" data-category="events">
+          <img src="assets/images/elders-1.jpeg" alt="Regular health and medical camp for our residents" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Events 3 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-200" data-category="events">
+          <img src="assets/images/festival-rakhi.jpg.jpeg" alt="Gardening event in our premises" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+
+        <!-- Celebrations 1 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in" data-category="celebrations">
+          <img src="assets/images/festival-birthday.jpg.jpeg" alt="Festival celebrations with joy and togetherness" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Celebrations 2 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-100" data-category="celebrations">
+          <img src="assets/images/team.jpg.jpeg" alt="Special birthday cake cutting and celebrations" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Celebrations 3 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-200" data-category="celebrations">
+          <img src="assets/images/elders-2.jpg.jpeg" alt="Our decorated home during Diwali" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+
+        <!-- Volunteers 1 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in" data-category="volunteers">
+          <img src="assets/images/team.jpg.jpeg" alt="Group of volunteers spending time with our elders" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Volunteers 2 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-100" data-category="volunteers">
+          <img src="assets/images/elders-1.jpeg" alt="Volunteers serving food and interacting" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+        <!-- Volunteers 3 -->
+        <div class="gallery-item relative overflow-hidden rounded-xl aspect-square group cursor-pointer fade-in delay-200" data-category="volunteers">
+          <img src="assets/images/team.jpg.jpeg" alt="Our dedicated volunteering team" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="gallery-item-overlay absolute inset-0 bg-charcoal/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <i class="fas fa-search-plus text-white text-3xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox fixed inset-0 z-[100] bg-black/90 hidden flex-col items-center justify-center p-4">
+    <button class="lightbox-close absolute top-6 right-6 text-white text-3xl hover:text-primary transition" aria-label="Close"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev absolute left-4 md:left-10 text-white text-4xl hover:text-primary transition" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav lightbox-next absolute right-4 md:right-10 text-white text-4xl hover:text-primary transition" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <img src="" alt="Gallery image" class="max-w-full max-h-[80vh] object-contain rounded shadow-2xl">
+    <p class="lightbox-caption text-white text-center mt-6 text-lg font-medium"></p>
+  </div>
+
+  <!-- Video Gallery -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal mb-4">Video Gallery</h2>
+        <div class="w-20 h-1 bg-primary mx-auto rounded mb-6"></div>
+        <p class="text-charcoal/70 max-w-2xl mx-auto">Watch highlights from our events and hear stories from our respected residents.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Video Placeholder 1 -->
+        <div class="relative rounded-2xl overflow-hidden aspect-video bg-gray-200 group cursor-pointer shadow-lg fade-in">
+          <img src="assets/images/festival-birthday.jpg.jpeg" alt="Video thumbnail" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-play text-white text-2xl ml-1"></i>
+            </div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+            <h3 class="text-white font-medium text-lg">Annual Day Celebrations 2023</h3>
+          </div>
+        </div>
+        
+        <!-- Video Placeholder 2 -->
+        <div class="relative rounded-2xl overflow-hidden aspect-video bg-gray-200 group cursor-pointer shadow-lg fade-in delay-100">
+          <img src="assets/images/elders-1.jpeg" alt="Video thumbnail" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+              <i class="fas fa-play text-white text-2xl ml-1"></i>
+            </div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+            <h3 class="text-white font-medium text-lg">A Day in the Life at Jeevan Ankur</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-light-gray text-center">
+    <div class="max-w-4xl mx-auto px-4 fade-in">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-charcoal mb-4">Want to see more? Follow us on social media</h2>
+      <p class="text-charcoal/70 mb-8">We regularly update our social media pages with daily activities, events, and heart-warming moments. Connect with us!</p>
+      <div class="flex justify-center gap-4">
+        <a href="https://www.instagram.com" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-medium hover:shadow-lg transition hover:-translate-y-1">
+          <i class="fab fa-instagram text-xl"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-[#1877F2] text-white rounded-full font-medium hover:shadow-lg transition hover:-translate-y-1">
+          <i class="fab fa-facebook-f text-xl"></i> Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
+            <span class="font-heading font-bold text-lg">Jeevan Ankur</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">Providing care, love, dignity, and a safe, family-like environment for senior citizens at our Vridhashram in Mumbai.</p>
+          <div class="footer-social flex gap-3">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918169615400" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="old-age-home.html">Our Old Age Home</a>
+          <a href="services.html">Services</a>
+          <a href="activities.html">Activities & Events</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Support</h4>
+          <a href="donate.html">Donate Now</a>
+          <a href="donate.html#volunteer">Volunteer</a>
+          <a href="donate.html#in-kind">In-Kind Donations</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm text-white/70">
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  
+  <script>
+    // Minimal Lightbox Script (assuming main.js might not cover this completely based on the specific prompt request)
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      
+      // Filtering
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all
+          filterBtns.forEach(b => b.classList.remove('active', 'bg-primary', 'text-white'));
+          // Add to clicked
+          btn.classList.add('active', 'bg-primary', 'text-white');
+          
+          const filterValue = btn.getAttribute('data-filter');
+          
+          galleryItems.forEach(item => {
+            if(filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+              item.style.display = 'block';
+              setTimeout(() => item.style.opacity = '1', 50);
+            } else {
+              item.style.opacity = '0';
+              setTimeout(() => item.style.display = 'none', 300);
+            }
+          });
+        });
+      });
+
+      // Simple Lightbox Logic
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = lightbox.querySelector('img');
+      const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+      const closeBtn = lightbox.querySelector('.lightbox-close');
+      
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const img = item.querySelector('img');
+          lightboxImg.src = img.src;
+          lightboxCaption.textContent = img.alt;
+          lightbox.classList.remove('hidden');
+          lightbox.classList.add('flex');
+        });
+      });
+      
+      if(closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          lightbox.classList.add('hidden');
+          lightbox.classList.remove('flex');
+        });
+      }
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Jeevan Ankur Seva Foundation</title>
+  <meta name="description" content="Get in touch with Jeevan Ankur Seva Foundation. Visit our old age home in Kurla East, Mumbai, or contact us for admissions, donations, and volunteering.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#E8722A',
+            'primary-dark': '#C85E1F',
+            secondary: '#1A6B5C',
+            'secondary-dark': '#145549',
+            accent: '#F5A623',
+            cream: '#FFF8F0',
+            charcoal: '#2D2D2D',
+            'light-gray': '#F5F0EB',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+  <!-- Navigation -->
+  <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+            <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
+          <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
+          <a href="services.html" class="nav-link text-sm font-medium text-charcoal">Services</a>
+          <a href="activities.html" class="nav-link text-sm font-medium text-charcoal">Activities</a>
+          <a href="gallery.html" class="nav-link text-sm font-medium text-charcoal">Gallery</a>
+          <a href="team.html" class="nav-link text-sm font-medium text-charcoal">Our Team</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
+          <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        </div>
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
+        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
+        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
+        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
+        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
+        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
+        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
+        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
+        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
+        <div class="mt-4 pt-4 border-t border-gray-100">
+          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
+          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero Banner -->
+  <section class="pt-20">
+    <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('assets/images/team.jpg.jpeg'); background-size: cover; background-position: center;"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto fade-in">
+        <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4">Contact Us</h1>
+        <p class="text-white/80 text-lg">We would love to hear from you</p>
+        <div class="flex justify-center gap-2 mt-6 text-sm text-white/60">
+          <a href="index.html" class="hover:text-accent transition">Home</a>
+          <span>/</span>
+          <span class="text-accent">Contact</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="py-16 px-4 bg-white -mt-10 relative z-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center flex flex-col items-center fade-in delay-100 hover:-translate-y-2 transition-transform duration-300">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-phone-alt text-2xl text-primary"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-secondary mb-3">Call Us</h3>
+          <p class="text-gray-600 mb-4 text-sm">We're available to answer your questions during working hours.</p>
+          <a href="tel:+918169615400" class="text-lg font-bold text-charcoal hover:text-primary transition mt-auto">+91 8169615400</a>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-secondary text-center flex flex-col items-center fade-in delay-200 hover:-translate-y-2 transition-transform duration-300">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-envelope text-2xl text-secondary"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-secondary mb-3">Email Us</h3>
+          <p class="text-gray-600 mb-4 text-sm">Send us a message anytime, and we'll reply as soon as possible.</p>
+          <a href="mailto:jeevanankursevafoundation@gmail.com" class="text-base font-bold text-charcoal hover:text-secondary transition mt-auto break-all">jeevanankursevafoundation@gmail.com</a>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-accent text-center flex flex-col items-center fade-in delay-300 hover:-translate-y-2 transition-transform duration-300">
+          <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-map-marker-alt text-2xl text-accent"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-secondary mb-3">Visit Us</h3>
+          <p class="text-gray-600 text-sm mt-auto">Jeevan Ankur Old Age Home, 67 D Bungalow (behind Madhav Baugh Clinic), Kamghar Nagar, beside Shreeram Co-operative Society, Sidheswar Building, Kurla East, Mumbai, Maharashtra 400024.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="py-16 md:py-24 px-4 bg-light-gray">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12">
+        
+        <!-- Contact Form -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100 fade-in-left">
+          <h2 class="font-heading text-3xl font-bold text-secondary mb-2">Send us a Message</h2>
+          <p class="text-gray-600 mb-8">Fill out the form below and our team will get back to you shortly.</p>
+          
+          <form id="contact-form" class="space-y-5" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.reset();">
+            <div class="form-group">
+              <label for="name" class="form-label text-sm font-medium text-gray-700 block mb-1">Full Name <span class="text-red-500">*</span></label>
+              <input type="text" id="name" name="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Your full name" required>
+              <span class="form-error text-xs text-red-500 hidden mt-1">Please enter your name.</span>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-5">
+              <div class="form-group">
+                <label for="email" class="form-label text-sm font-medium text-gray-700 block mb-1">Email Address <span class="text-red-500">*</span></label>
+                <input type="email" id="email" name="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Your email" required>
+                <span class="form-error text-xs text-red-500 hidden mt-1">Please enter a valid email.</span>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label text-sm font-medium text-gray-700 block mb-1">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Your phone number">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label text-sm font-medium text-gray-700 block mb-1">Subject</label>
+              <select id="subject" name="subject" class="form-select w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-white">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Admission Inquiry">Admission Inquiry</option>
+                <option value="Donation">Donation</option>
+                <option value="Volunteering">Volunteering</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label text-sm font-medium text-gray-700 block mb-1">Your Message <span class="text-red-500">*</span></label>
+              <textarea id="message" name="message" rows="5" class="form-textarea w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition resize-none" placeholder="How can we help you?" required></textarea>
+              <span class="form-error text-xs text-red-500 hidden mt-1">Please enter your message.</span>
+            </div>
+            
+            <button type="submit" class="btn-primary w-full py-4 rounded-lg bg-primary text-white font-bold text-lg hover:bg-primary-dark transition shadow-lg mt-4 flex justify-center items-center gap-2">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            
+            <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mt-4 flex items-center gap-3">
+              <i class="fas fa-check-circle text-xl"></i>
+              <p class="font-medium">Thank you! We will get back to you within 24-48 hours.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Maps and Visiting Hours -->
+        <div class="space-y-8 fade-in-right flex flex-col">
+          
+          <!-- Google Map Embed -->
+          <div class="bg-white p-2 rounded-2xl shadow-xl border border-gray-100 flex-grow h-[400px] lg:h-auto overflow-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15082.903828943717!2d72.8732047!3d19.066487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c897f5b3531f%3A0xe54694e240217dc3!2sKurla%20East%2C%20Kurla%2C%20Mumbai%2C%20Maharashtra%20400024!5e0!3m2!1sen!2sin!4v1709214000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps Location"></iframe>
+          </div>
+          
+          <!-- Visiting Hours -->
+          <div class="bg-secondary p-8 rounded-2xl shadow-xl text-white">
+            <h3 class="font-heading text-2xl font-bold mb-6 flex items-center gap-3">
+              <i class="far fa-clock text-accent"></i> Visiting Hours
+            </h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                <span class="font-medium text-white/90">Monday - Saturday</span>
+                <span class="font-bold text-accent">10:00 AM - 5:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                <span class="font-medium text-white/90">Sunday</span>
+                <span class="font-bold text-accent">10:00 AM - 1:00 PM</span>
+              </div>
+            </div>
+            <div class="mt-6 bg-white/10 p-4 rounded-lg flex items-start gap-3">
+              <i class="fas fa-info-circle text-accent mt-1"></i>
+              <p class="text-sm text-white/90 leading-relaxed">To ensure our elders' comfort and uninterrupted routine, prior appointment is highly recommended before your visit.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="py-16 px-4 bg-white border-t border-gray-100">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="font-heading text-3xl font-bold text-secondary mb-4">Connect With Us Online</h2>
+      <p class="text-gray-600 mb-10">Follow our journey, view daily activities, and stay updated with our latest events and needs.</p>
+      
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="https://www.instagram.com" target="_blank" class="flex items-center gap-4 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+          <i class="fab fa-instagram text-3xl"></i>
+          <div class="text-left">
+            <div class="text-xs font-medium opacity-80 uppercase tracking-wider">Follow on</div>
+            <div class="font-bold text-lg">Instagram</div>
+          </div>
+        </a>
+        
+        <a href="https://www.facebook.com" target="_blank" class="flex items-center gap-4 bg-[#1877F2] text-white px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+          <i class="fab fa-facebook-f text-3xl"></i>
+          <div class="text-left">
+            <div class="text-xs font-medium opacity-80 uppercase tracking-wider">Like on</div>
+            <div class="font-bold text-lg">Facebook</div>
+          </div>
+        </a>
+
+        <a href="https://wa.me/918169615400" target="_blank" class="flex items-center gap-4 bg-[#25D366] text-white px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+          <i class="fab fa-whatsapp text-3xl"></i>
+          <div class="text-left">
+            <div class="text-xs font-medium opacity-80 uppercase tracking-wider">Chat on</div>
+            <div class="font-bold text-lg">WhatsApp</div>
+          </div>
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-gray-500">Search for <span class="font-bold text-charcoal">"Jeevan Ankur Vridhashram"</span></p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 md:py-24 px-4 bg-cream">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="section-title text-3xl font-bold font-heading mb-4 text-secondary">Frequently Asked Questions</h2>
+        <p class="text-gray-600">Find quick answers to common queries about our foundation.</p>
+      </div>
+      
+      <div class="accordion-group space-y-4 fade-in delay-100">
+        <!-- FAQ 1 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <button class="accordion-header w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.accordion-icon').classList.toggle('rotate-180')">
+            <span class="font-bold text-charcoal text-lg">How can I visit the old age home?</span>
+            <i class="fas fa-chevron-down accordion-icon text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-body hidden px-6 pb-6 text-gray-600 border-t border-gray-50 pt-4">
+            <p>You can visit us from Monday to Saturday (10 AM - 5 PM) and Sunday (10 AM - 1 PM) at our Kurla East facility. We highly recommend calling us at +91 8169615400 prior to your visit so we can ensure the timing doesn't interrupt the residents' meals or resting schedules.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <button class="accordion-header w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.accordion-icon').classList.toggle('rotate-180')">
+            <span class="font-bold text-charcoal text-lg">How do I make a donation?</span>
+            <i class="fas fa-chevron-down accordion-icon text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-body hidden px-6 pb-6 text-gray-600 border-t border-gray-50 pt-4">
+            <p>We accept donations via UPI, Bank Transfer, and Cheques. You can also provide in-kind donations like groceries, medicines, and daily essentials. Please visit our <a href="donate.html" class="text-primary hover:underline">Donate</a> page for detailed banking and UPI information.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <button class="accordion-header w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.accordion-icon').classList.toggle('rotate-180')">
+            <span class="font-bold text-charcoal text-lg">Can I volunteer at the Vridhashram?</span>
+            <i class="fas fa-chevron-down accordion-icon text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-body hidden px-6 pb-6 text-gray-600 border-t border-gray-50 pt-4">
+            <p>Yes, absolutely! We always welcome volunteers who want to spend quality time with our elders, help organize events, or provide medical checkups. You can fill out the volunteer application on our Donate page or contact us directly to discuss how you can help.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <button class="accordion-header w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.accordion-icon').classList.toggle('rotate-180')">
+            <span class="font-bold text-charcoal text-lg">How do I inquire about admission for a family member?</span>
+            <i class="fas fa-chevron-down accordion-icon text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-body hidden px-6 pb-6 text-gray-600 border-t border-gray-50 pt-4">
+            <p>For admissions, please use the contact form above and select "Admission Inquiry" as the subject, or call our helpline directly. We will schedule an initial meeting to discuss the elder's medical history, required care levels, and our admission protocols.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <button class="accordion-header w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.accordion-icon').classList.toggle('rotate-180')">
+            <span class="font-bold text-charcoal text-lg">Is my donation tax-deductible?</span>
+            <i class="fas fa-chevron-down accordion-icon text-primary transition-transform duration-300"></i>
+          </button>
+          <div class="accordion-body hidden px-6 pb-6 text-gray-600 border-t border-gray-50 pt-4">
+            <p>Yes, all financial contributions to Jeevan Ankur Seva Foundation are eligible for tax deductions under Section 80G of the Income Tax Act. We will provide you with an official receipt carrying our 80G registration number upon successful donation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
+            <span class="font-heading font-bold text-lg">Jeevan Ankur</span>
+          </div>
+          <p class="text-white/70 text-sm leading-relaxed mb-4">Providing care, love, dignity, and a safe, family-like environment for senior citizens at our Vridhashram in Mumbai.</p>
+          <div class="footer-social flex gap-3">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/918169615400" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="old-age-home.html">Our Old Age Home</a>
+          <a href="services.html">Services</a>
+          <a href="activities.html">Activities & Events</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="footer-links">
+          <h4 class="font-heading font-bold text-lg mb-4">Support</h4>
+          <a href="donate.html">Donate Now</a>
+          <a href="donate.html#volunteer">Volunteer</a>
+          <a href="donate.html#in-kind">In-Kind Donations</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-3 text-sm text-white/70">
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

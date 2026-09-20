@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: nGO-CEP
+    name: jeevan-ankur-seva-foundation
     env: static
     buildCommand: ""
     staticPublishPath: .

@@ -138,99 +138,204 @@
     </div>
   </section>
 
-  <!-- Donation Tiers -->
-  <section class="py-16 md:py-24 px-4 bg-light-gray">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="section-title text-3xl font-bold font-heading mb-4 text-secondary fade-in">Choose Your Impact</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto mb-16 fade-in delay-100">Select a donation tier that resonates with you and make an immediate difference in the lives of our respected residents.</p>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Tier 1 -->
-        <div class="donation-tier card bg-white p-8 rounded-2xl shadow-md border-t-4 border-primary fade-in delay-200">
-          <h3 class="text-xl font-bold text-secondary mb-2">Nourish</h3>
-          <div class="donation-amount text-4xl font-bold text-primary my-6">₹500</div>
-          <p class="text-gray-600 mb-8 h-20">Sponsor nutritious fruits and healthy snacks for all residents for a day.</p>
-          <a href="#payment-methods" class="btn-outline w-full text-center py-3 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-medium block">Donate This Amount</a>
+  <!-- Meal Sponsorship Section -->
+  <section class="py-16 md:py-24 px-4 bg-light-gray" id="meal-sponsorship">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14 fade-in">
+        <span class="bg-primary/10 text-primary font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-wider inline-block mb-3">Community Meal Initiative</span>
+        <h2 class="section-title text-3xl md:text-4xl font-bold font-heading text-secondary mb-4">Sponsor a Meal for 15 Senior Citizens</h2>
+        <div class="section-divider w-16 h-1 bg-primary mx-auto mb-4"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
+          Help provide wholesome, nutritious meals to the elderly living at Jeevan Ankur Old Age Home. Every meal you sponsor brings comfort, warmth, care, and dignity to our respected elders.
+        </p>
+      </div>
+
+      <!-- Meal Cards Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Breakfast -->
+        <div class="card bg-white p-7 rounded-2xl shadow-md border-t-4 border-amber-500 hover:shadow-xl transition duration-300 flex flex-col justify-between fade-in">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl">🥣</span>
+              <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Morning Meal</span>
+            </div>
+            <h3 class="text-xl font-bold text-charcoal mb-2">Breakfast</h3>
+            <p class="text-gray-600 text-sm mb-4">Wholesome morning breakfast, hot tea, and fresh fruits for all 15 residents.</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-primary mb-4">₹1,000</div>
+            <a href="#payment-methods" class="btn-outline w-full text-center py-2.5 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-semibold text-sm block">Sponsor Breakfast</a>
+          </div>
         </div>
-        
-        <!-- Tier 2 (Featured) -->
-        <div class="donation-tier featured card bg-white p-8 rounded-2xl shadow-xl border-t-4 border-accent relative transform md:-translate-y-4 fade-in delay-300">
-          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-accent text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">Most Needed</div>
-          <h3 class="text-xl font-bold text-secondary mb-2">Care</h3>
-          <div class="donation-amount text-4xl font-bold text-accent my-6">₹1,000</div>
-          <p class="text-gray-600 mb-8 h-20">Cover a week of essential medicines and medical supplies for a senior citizen.</p>
-          <a href="#payment-methods" class="btn-accent w-full text-center py-3 rounded-lg bg-accent text-white hover:bg-yellow-500 transition font-medium shadow-md block">Donate This Amount</a>
+
+        <!-- Lunch -->
+        <div class="card bg-white p-7 rounded-2xl shadow-md border-t-4 border-primary hover:shadow-xl transition duration-300 flex flex-col justify-between fade-in delay-100">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl">🍛</span>
+              <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">Afternoon Meal</span>
+            </div>
+            <h3 class="text-xl font-bold text-charcoal mb-2">Lunch</h3>
+            <p class="text-gray-600 text-sm mb-4">Complete nutritious balanced lunch including rice, dal, fresh vegetables, rotis, and salad.</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-primary mb-4">₹2,000</div>
+            <a href="#payment-methods" class="btn-outline w-full text-center py-2.5 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-semibold text-sm block">Sponsor Lunch</a>
+          </div>
         </div>
-        
-        <!-- Tier 3 -->
-        <div class="donation-tier card bg-white p-8 rounded-2xl shadow-md border-t-4 border-primary fade-in delay-400">
-          <h3 class="text-xl font-bold text-secondary mb-2">Shelter</h3>
-          <div class="donation-amount text-4xl font-bold text-primary my-6">₹5,000</div>
-          <p class="text-gray-600 mb-8 h-20">Support one month of safe accommodation, meals, and daily care for an elder.</p>
-          <a href="#payment-methods" class="btn-outline w-full text-center py-3 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-medium block">Donate This Amount</a>
+
+        <!-- Dinner -->
+        <div class="card bg-white p-7 rounded-2xl shadow-md border-t-4 border-indigo-600 hover:shadow-xl transition duration-300 flex flex-col justify-between fade-in delay-200">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl">🌙</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">Evening Meal</span>
+            </div>
+            <h3 class="text-xl font-bold text-charcoal mb-2">Dinner</h3>
+            <p class="text-gray-600 text-sm mb-4">Warm, healthy, and easy-to-digest dinner served with care and love to all 15 seniors.</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-primary mb-4">₹2,000</div>
+            <a href="#payment-methods" class="btn-outline w-full text-center py-2.5 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-semibold text-sm block">Sponsor Dinner</a>
+          </div>
         </div>
-        
-        <!-- Tier 4 -->
-        <div class="donation-tier card bg-white p-8 rounded-2xl shadow-md border-t-4 border-gray-400 fade-in delay-500">
-          <h3 class="text-xl font-bold text-secondary mb-2">Your Choice</h3>
-          <div class="donation-amount text-4xl font-bold text-gray-700 my-6">Any ₹</div>
-          <p class="text-gray-600 mb-8 h-20">Every rupee counts. Donate any amount you wish to contribute towards our mission.</p>
-          <a href="#payment-methods" class="btn-outline w-full text-center py-3 rounded-lg border-2 border-gray-400 text-gray-600 hover:bg-gray-100 transition font-medium block">Donate Custom Amount</a>
+
+        <!-- Paneer Meal -->
+        <div class="card bg-white p-7 rounded-2xl shadow-md border-t-4 border-emerald-500 hover:shadow-xl transition duration-300 flex flex-col justify-between fade-in delay-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl">🧀</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Special Veg</span>
+            </div>
+            <h3 class="text-xl font-bold text-charcoal mb-2">Paneer Special Meal</h3>
+            <p class="text-gray-600 text-sm mb-4">A rich, festive cottage-cheese (paneer) specialty meal for a delightful celebration feast.</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-primary mb-4">₹2,500</div>
+            <a href="#payment-methods" class="btn-outline w-full text-center py-2.5 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-semibold text-sm block">Sponsor Paneer Meal</a>
+          </div>
         </div>
+
+        <!-- Non-Veg Meal -->
+        <div class="card bg-white p-7 rounded-2xl shadow-md border-t-4 border-rose-500 hover:shadow-xl transition duration-300 flex flex-col justify-between fade-in delay-400">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl">🍗</span>
+              <span class="bg-rose-100 text-rose-800 text-xs font-bold px-3 py-1 rounded-full">Special Non-Veg</span>
+            </div>
+            <h3 class="text-xl font-bold text-charcoal mb-2">Non-Veg Special Meal</h3>
+            <p class="text-gray-600 text-sm mb-4">Special protein-rich chicken or fish feast prepared with care for our residents.</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-primary mb-4">₹3,000</div>
+            <a href="#payment-methods" class="btn-outline w-full text-center py-2.5 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition font-semibold text-sm block">Sponsor Non-Veg Meal</a>
+          </div>
+        </div>
+
+        <!-- All 3 Meals (Featured) -->
+        <div class="card bg-gradient-to-br from-primary to-primary-dark text-white p-7 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 flex flex-col justify-between relative transform lg:-translate-y-2 fade-in delay-500">
+          <div class="absolute -top-3 right-6 bg-accent text-charcoal text-xs font-extrabold px-3 py-1 rounded-full shadow">FULL DAY MEALS</div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl">❤️</span>
+              <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">All 3 Meals</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Full Day Meal Sponsorship</h3>
+            <p class="text-white/90 text-sm mb-4">Sponsors all three regular meals (Breakfast, Lunch & Dinner) for all 15 senior citizens for one entire day.</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-accent mb-4">₹5,000 <span class="text-xs text-white/80 font-normal">/ day</span></div>
+            <a href="#payment-methods" class="btn-accent w-full text-center py-2.5 rounded-xl bg-accent text-charcoal hover:bg-yellow-400 transition font-bold text-sm block shadow-md">Sponsor Full Day</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meal Message Banner -->
+      <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-200 text-center max-w-4xl mx-auto fade-in">
+        <p class="text-gray-700 font-medium text-base md:text-lg mb-2">
+          "You may sponsor Breakfast, Lunch, Dinner, a Non-Veg Meal, a Paneer Meal, or all three meals. Every meal you sponsor brings comfort, care, and dignity to our elders."
+        </p>
+        <p class="text-primary font-bold text-lg">One Meal. One Smile. One Blessing. ❤️</p>
       </div>
     </div>
   </section>
 
-  <!-- How to Donate -->
+  <!-- Make Your Contribution / Payment Methods -->
   <section id="payment-methods" class="py-16 md:py-24 px-4 bg-white">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="section-title text-3xl font-bold font-heading mb-4 text-secondary">How to Donate</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Choose a convenient payment method to send your support.</p>
+      <div class="text-center mb-14 fade-in">
+        <span class="bg-secondary/10 text-secondary font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-wider inline-block mb-3">Official Channels</span>
+        <h2 class="section-title text-3xl md:text-4xl font-bold font-heading text-secondary mb-4">Make Your Contribution</h2>
+        <div class="section-divider w-16 h-1 bg-primary mx-auto mb-4"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto">Make your donation directly through our official verified Indian Overseas Bank account or scan the UPI QR code below.</p>
       </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- UPI -->
-        <div class="card p-8 rounded-2xl shadow-md border border-gray-100 bg-cream text-center fade-in delay-100">
-          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fas fa-qrcode text-2xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-bold text-secondary mb-4">UPI / QR Code</h3>
-          <div class="bg-white p-4 rounded-xl shadow-inner mb-4 inline-block border border-gray-200">
-            <div class="w-40 h-40 bg-gray-100 flex items-center justify-center text-gray-400 rounded-lg">
-              <i class="fas fa-qrcode text-6xl"></i>
+      <div class="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <!-- Official UPI Scanner -->
+        <div class="card p-8 rounded-2xl shadow-lg border-2 border-primary/20 bg-cream text-center flex flex-col items-center justify-between fade-in">
+          <div>
+            <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-qrcode text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-1">Instant UPI Scan & Pay</h3>
+            <p class="text-xs text-gray-500 mb-6">Scan using Google Pay, PhonePe, Paytm, BHIM, or any UPI App</p>
+            
+            <div class="bg-white p-3 rounded-2xl shadow-md inline-block border border-gray-200 mb-6 max-w-[280px]">
+              <img src="assets/images/upi_scan.jpeg" alt="Jeevan Ankur Seva Foundation UPI QR Code" class="w-full h-auto rounded-xl object-contain shadow-inner">
             </div>
           </div>
-          <p class="text-sm text-gray-600 font-medium mb-2">Scan to Pay via UPI</p>
-          <p class="text-sm font-bold text-charcoal bg-white py-2 px-4 rounded-lg inline-block border border-gray-200">jeevanankur@upi</p>
+
+          <div class="w-full">
+            <div class="bg-white py-3 px-4 rounded-xl border border-gray-200 flex items-center justify-between gap-2 max-w-xs mx-auto mb-3">
+              <span class="text-xs text-gray-500 font-medium">UPI ID:</span>
+              <span class="text-sm font-bold text-charcoal select-all">JEEVANA18081@iob</span>
+            </div>
+            <p class="text-xs text-secondary font-semibold"><i class="fas fa-shield-check mr-1"></i> Verified Official NGO UPI Channel</p>
+          </div>
         </div>
         
-        <!-- Bank Transfer -->
-        <div class="card p-8 rounded-2xl shadow-md border border-gray-100 bg-cream text-center fade-in delay-200">
-          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fas fa-university text-2xl text-primary"></i>
+        <!-- Official Bank Details -->
+        <div class="card p-8 rounded-2xl shadow-lg border-2 border-secondary/20 bg-cream flex flex-col justify-between fade-in delay-100">
+          <div>
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
+                <i class="fas fa-university text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-secondary">Direct Bank Transfer</h3>
+                <p class="text-xs text-gray-500">NEFT / RTGS / IMPS / Net Banking</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 space-y-4 mb-6">
+              <div class="border-b border-gray-100 pb-3">
+                <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Account Name</p>
+                <p class="text-base font-bold text-charcoal">Jeevan Ankur Seva Foundation</p>
+              </div>
+              <div class="border-b border-gray-100 pb-3">
+                <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Account Number</p>
+                <p class="text-lg font-mono font-bold text-primary select-all">048702000001808</p>
+              </div>
+              <div class="grid grid-cols-2 gap-4 border-b border-gray-100 pb-3">
+                <div>
+                  <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">IFSC Code</p>
+                  <p class="text-base font-mono font-bold text-charcoal select-all">IOBA0000487</p>
+                </div>
+                <div>
+                  <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Account Type</p>
+                  <p class="text-base font-bold text-charcoal">Current Account</p>
+                </div>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Bank Name</p>
+                <p class="text-base font-bold text-charcoal">Indian Overseas Bank</p>
+              </div>
+            </div>
           </div>
-          <h3 class="text-xl font-bold text-secondary mb-6">Bank Transfer</h3>
-          <div class="text-left bg-white p-6 rounded-xl shadow-inner border border-gray-200 space-y-3 mb-4">
-            <p class="text-sm"><span class="text-gray-500 font-medium">Account Name:</span><br><span class="font-bold text-charcoal">Jeevan Ankur Seva Foundation</span></p>
-            <p class="text-sm"><span class="text-gray-500 font-medium">Bank:</span><br><span class="font-bold text-charcoal">[Bank Name]</span></p>
-            <p class="text-sm"><span class="text-gray-500 font-medium">A/C No:</span><br><span class="font-bold text-charcoal">[XXXXXXXXXXXX]</span></p>
-            <p class="text-sm"><span class="text-gray-500 font-medium">IFSC:</span><br><span class="font-bold text-charcoal">[XXXXXXXXXXX]</span></p>
-            <p class="text-sm"><span class="text-gray-500 font-medium">Branch:</span><br><span class="font-bold text-charcoal">[Branch Name]</span></p>
-          </div>
-          <p class="text-xs text-primary font-medium italic mt-4"><i class="fas fa-info-circle mr-1"></i>Please contact us for verified bank details</p>
-        </div>
-        
-        <!-- Online -->
-        <div class="card p-8 rounded-2xl shadow-md border border-gray-100 bg-cream text-center fade-in delay-300">
-          <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fas fa-credit-card text-2xl text-gray-500"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-600 mb-4">Online Payment</h3>
-          <div class="flex flex-col items-center justify-center h-48 bg-white rounded-xl border border-gray-200 border-dashed p-6">
-            <i class="fas fa-tools text-3xl text-gray-400 mb-4"></i>
-            <p class="text-gray-500 font-medium text-center">Coming Soon</p>
-            <p class="text-sm text-gray-400 text-center mt-2">Online payment gateway integration is in progress.</p>
+
+          <div class="bg-primary/10 p-4 rounded-xl text-center">
+            <p class="text-sm font-semibold text-primary mb-1">❤️ Thank you for your kindness and support.</p>
+            <p class="text-xs text-gray-600">After completing your transfer, please WhatsApp your transfer screenshot to <a href="https://wa.me/918169615400" class="font-bold text-secondary underline">+91 8169615400</a> for acknowledgment and 80G receipt.</p>
           </div>
         </div>
       </div>

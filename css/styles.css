@@ -815,10 +815,534 @@ section[id] {
   padding: 0.5rem 1.5rem 1.25rem;
 }
 
-/* --- Responsive Adjustments --- */
+/* ===================================================
+   COMPREHENSIVE MOBILE-FIRST RESPONSIVE IMPROVEMENTS
+   =================================================== */
+
+/* --- Prevent horizontal scroll globally --- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* --- Mobile Menu Overlay --- */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mobile-menu-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* --- Improved Mobile Menu --- */
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(288px, 85vw);
+  background: white;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+  z-index: 60;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #f0ebe6;
+  background: var(--cream);
+}
+
+.mobile-menu-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--light-gray);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--charcoal);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.mobile-menu-close:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.mobile-menu-nav {
+  padding: 1rem 0;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, padding-left 0.2s;
+  border-bottom: 1px solid #f5f0eb;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  background-color: var(--cream);
+  color: var(--primary);
+  padding-left: 2rem;
+}
+
+.mobile-menu-footer {
+  padding: 1rem 1.5rem 2rem;
+  border-top: 1px solid #f0ebe6;
+  margin-top: 0.5rem;
+}
+
+.mobile-menu-contact a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0;
+  font-size: 0.875rem;
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mobile-menu-contact a:hover {
+  color: var(--primary);
+}
+
+/* --- Hero Section — Mobile-first --- */
+.hero-section {
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
+.hero-content {
+  padding: 1.25rem;
+  max-width: 760px;
+}
+
+.hero-content p.hero-tagline {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+/* --- Core Values Section Fix --- */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.value-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.value-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.value-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.value-card p {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* --- Stats Section --- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* --- Trust Strip --- */
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  padding: 0.75rem 1rem;
+}
+
+.trust-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* --- Cards general --- */
+.card {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* --- Team Cards --- */
+.team-card img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* --- Director Card in About Preview (small horizontal card) --- */
+.director-preview-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--white);
+  padding: 1.25rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.director-preview-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.director-preview-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  flex-shrink: 0;
+}
+
+/* --- Floating Buttons — Mobile Safe Zone --- */
+.whatsapp-float {
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 52px;
+  height: 52px;
+  font-size: 1.5rem;
+}
+
+.back-to-top {
+  bottom: 5rem;
+  right: 1.25rem;
+  width: 44px;
+  height: 44px;
+  font-size: 1rem;
+}
+
+/* --- Timeline Mobile Fix --- */
+.timeline {
+  padding-left: 1.5rem;
+}
+
+.timeline-item {
+  padding-left: 1.25rem;
+}
+
+.timeline-item::before {
+  left: -1.5rem;
+  transform: translateX(-2px);
+}
+
+/* --- Donation Tiers Mobile --- */
+.donation-tier {
+  padding: 1.5rem 1.25rem;
+}
+
+/* --- Gallery Item --- */
+.gallery-item img {
+  height: 200px;
+}
+
+/* --- Form Grid on Small Screens --- */
+@media (max-width: 480px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =====================
+   TABLET (641px – 1023px)
+   ===================== */
+@media (min-width: 641px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .value-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .value-card-icon {
+    width: 72px;
+    height: 72px;
+    font-size: 1.75rem;
+  }
+
+  .value-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .value-card p {
+    font-size: 0.875rem;
+  }
+
+  .trust-strip-item {
+    font-size: 0.85rem;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+}
+
+/* =====================
+   DESKTOP (1024px+)
+   ===================== */
+@media (min-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .value-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .value-card-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-item img {
+    height: 250px;
+  }
+
+  .team-card img {
+    height: 280px;
+  }
+
+  .hero-section {
+    min-height: 90vh;
+  }
+
+  .trust-strip-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE (max 480px)
+   =========================== */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 100svh;
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 7vw, 2.25rem);
+    line-height: 1.25;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.4rem, 6vw, 1.75rem);
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-accent {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+
+  .value-card {
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .value-card-icon {
+    margin: 0;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    font-size: 1.25rem;
+  }
+
+  .value-card h4 {
+    margin-bottom: 0.25rem;
+  }
+
+  .donation-amount {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  .lightbox-nav {
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+  }
+
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+
+  .gallery-filter-btn {
+    padding: 0.4rem 0.875rem;
+    font-size: 0.8rem;
+    min-height: 40px;
+  }
+
+  .timeline {
+    padding-left: 1.25rem;
+  }
+
+  .footer-links a {
+    font-size: 0.875rem;
+  }
+
+  .back-to-top {
+    bottom: 4.5rem;
+  }
+}
+
+/* ===========================
+   320px - 360px SCREENS
+   =========================== */
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.35rem;
+  }
+
+  .hero-content p.hero-tagline {
+    font-size: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .value-card-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+
+  .mobile-menu {
+    width: 90vw;
+  }
+}
+
+/* ===========================
+   768px - TABLETS
+   =========================== */
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 80vh;
+    min-height: 85vh;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
   }
 
   .section-title {
@@ -829,28 +1353,42 @@ section[id] {
     font-size: 2.25rem;
   }
 
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
   .donation-amount {
     font-size: 2rem;
   }
+
+  .team-card img {
+    height: 220px;
+  }
+
+  .director-preview-card {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.6rem;
+/* ===========================
+   PRINT
+   =========================== */
+@media print {
+  .nav-container,
+  .whatsapp-float,
+  .back-to-top,
+  .mobile-menu,
+  .mobile-menu-overlay,
+  footer {
+    display: none !important;
   }
 
-  .section-title {
-    font-size: 1.5rem;
+  body {
+    background: white;
+    color: black;
   }
 
-  .btn-primary,
-  .btn-secondary {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+  .card, .donation-tier, .team-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
   }
 }
 

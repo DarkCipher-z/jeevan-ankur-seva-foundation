@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -39,9 +39,9 @@
   <!-- Navigation -->
   <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 min-w-0">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover flex-shrink-0">
           <div>
             <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
             <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
@@ -58,35 +58,51 @@
           <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
           <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
         </div>
-        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2 rounded-lg" aria-label="Toggle menu" aria-expanded="false">
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
-      <div class="flex flex-col gap-4">
-        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
-        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
-        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
-        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
-        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
-        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
-        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
-        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
-        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
-        <div class="mt-4 pt-4 border-t border-gray-100">
-          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
-          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
+  </nav>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-overlay" class="mobile-menu-overlay lg:hidden"></div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="flex items-center gap-2">
+        <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-9 h-9 rounded-full object-cover">
+        <div>
+          <span class="font-heading font-bold text-sm text-charcoal leading-tight block">Jeevan Ankur</span>
+          <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
         </div>
       </div>
+      <button id="mobile-close" class="mobile-menu-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
     </div>
-  </nav>
+    <nav class="mobile-menu-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="old-age-home.html" class="mobile-nav-link">Our Old Age Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="activities.html" class="mobile-nav-link">Activities &amp; Events</a>
+      <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+      <a href="team.html" class="mobile-nav-link">Our Team</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="donate.html" class="btn-primary w-full justify-center mb-4"><i class="fas fa-hand-holding-heart"></i> Donate Now</a>
+      <div class="mobile-menu-contact">
+        <a href="tel:+918169615400"><i class="fas fa-phone text-primary w-4"></i><span>+91 8169615400</span></a>
+        <a href="mailto:jeevanankursevafoundation@gmail.com"><i class="fas fa-envelope text-primary w-4"></i><span>Email Us</span></a>
+      </div>
+    </div>
+  </div>
 
   <!-- Hero Banner -->
-  <section class="pt-20">
-    <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+  <section class="pt-16 sm:pt-20">
+    <div class="bg-secondary py-12 sm:py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-10">
         <div class="absolute inset-0" style="background-image: url('assets/images/elders-2.jpg.jpeg'); background-size: cover; background-position: center;"></div>
       </div>
@@ -273,9 +289,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+  <footer class="bg-charcoal text-white pt-12 sm:pt-16 pb-8 px-4">
     <div class="max-w-7xl mx-auto">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
         <div>
           <div class="flex items-center gap-3 mb-4">
             <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
@@ -307,13 +323,13 @@
         <div>
           <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
           <div class="space-y-3 text-sm text-white/70">
-            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
-            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
-            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1 flex-shrink-0"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-2 sm:gap-3 min-w-0"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-center gap-2 sm:gap-3 min-w-0"><i class="fas fa-envelope text-primary flex-shrink-0"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
           </div>
         </div>
       </div>
-      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs sm:text-sm text-white/50 text-center">
         <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved. | CIN: U88900MH2026NPL471582</p>
         <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
       </div>
@@ -377,3 +393,5 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+

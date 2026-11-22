@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Team | Jeevan Ankur Seva Foundation</title>
-  <meta name="description" content="Dedicated hearts working together for our elders">
+  <meta name="description" content="Dedicated hearts working together for our elders — Meet the directors and team at Jeevan Ankur Seva Foundation.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -39,15 +39,15 @@
   <!-- Navigation -->
   <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
-          <div>
-            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 min-w-0">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover flex-shrink-0">
+          <div class="min-w-0">
+            <span class="font-heading font-bold text-base sm:text-lg text-charcoal leading-tight block truncate">Jeevan Ankur</span>
             <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
           </div>
         </a>
-        <div class="hidden lg:flex items-center gap-8">
+        <div class="hidden lg:flex items-center gap-6 xl:gap-8">
           <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
           <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
           <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
@@ -58,42 +58,59 @@
           <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
           <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
         </div>
-        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2 rounded-lg" aria-label="Toggle menu" aria-expanded="false">
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
-      <div class="flex flex-col gap-4">
-        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
-        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
-        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
-        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
-        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
-        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
-        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
-        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
-        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
-        <div class="mt-4 pt-4 border-t border-gray-100">
-          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
-          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
-        </div>
-      </div>
-    </div>
   </nav>
 
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-overlay" class="mobile-menu-overlay lg:hidden"></div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="flex items-center gap-2">
+        <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-9 h-9 rounded-full object-cover">
+        <div>
+          <span class="font-heading font-bold text-sm text-charcoal leading-tight block">Jeevan Ankur</span>
+          <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+        </div>
+      </div>
+      <button id="mobile-close" class="mobile-menu-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="old-age-home.html" class="mobile-nav-link">Our Old Age Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="activities.html" class="mobile-nav-link">Activities &amp; Events</a>
+      <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+      <a href="team.html" class="mobile-nav-link">Our Team</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="donate.html" class="btn-primary w-full justify-center mb-4"><i class="fas fa-hand-holding-heart"></i> Donate Now</a>
+      <div class="mobile-menu-contact">
+        <a href="tel:+918169615400"><i class="fas fa-phone text-primary w-4"></i><span>+91 8169615400</span></a>
+        <a href="mailto:jeevanankursevafoundation@gmail.com"><i class="fas fa-envelope text-primary w-4"></i><span>Email Us</span></a>
+      </div>
+    </div>
+  </div>
+
   <!-- Hero Banner -->
-  <section class="pt-20">
-    <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+  <section class="pt-16 sm:pt-20">
+    <div class="bg-secondary py-12 sm:py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-10">
         <div class="absolute inset-0" style="background-image: url('assets/images/team.jpg.jpeg'); background-size: cover; background-position: center;"></div>
       </div>
       <div class="relative z-10 max-w-4xl mx-auto">
-        <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4 fade-in">Our Team</h1>
-        <p class="text-white/80 text-lg fade-in delay-100">Dedicated hearts working together for our elders</p>
-        <div class="flex justify-center gap-2 mt-6 text-sm text-white/60 fade-in delay-200">
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 fade-in">Our Team</h1>
+        <p class="text-white/80 text-base sm:text-lg fade-in delay-100">Dedicated hearts working together for our elders</p>
+        <div class="flex justify-center gap-2 mt-5 text-sm text-white/60 fade-in delay-200">
           <a href="index.html" class="hover:text-accent transition">Home</a>
           <span>/</span>
           <span class="text-accent">Our Team</span>
@@ -102,25 +119,30 @@
     </div>
   </section>
 
-  <!-- Leadership Section -->
-  <section class="py-20 bg-white">
+  <!-- Leadership / Directors Section -->
+  <section class="py-14 sm:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal mb-4">Our Directors</h2>
-        <div class="w-20 h-1 bg-primary mx-auto rounded mb-6"></div>
-        <p class="text-charcoal/70 max-w-2xl mx-auto">The visionaries behind Jeevan Ankur Seva Foundation, committed to creating a society where every elderly person lives with dignity, respect, and emotional fulfillment.</p>
+      <div class="text-center mb-12 sm:mb-16 fade-in">
+        <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-4">Our Directors</h2>
+        <div class="w-20 h-1 bg-primary mx-auto rounded mb-5 sm:mb-6"></div>
+        <p class="text-charcoal/70 max-w-2xl mx-auto text-sm sm:text-base">The visionaries behind Jeevan Ankur Seva Foundation, committed to creating a society where every elderly person lives with dignity, respect, and emotional fulfillment.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <div class="grid sm:grid-cols-2 gap-8 sm:gap-10 md:gap-12 max-w-4xl mx-auto">
+
         <!-- Director 1: Babu Gauraveni -->
         <div class="team-card bg-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow fade-in">
-          <div class="aspect-square overflow-hidden">
-            <img src="assets/images/Babu Gauraveni Director of Jeevan Ankur Seva Foundation.jpeg" alt="Babu Gauraveni - Director of Jeevan Ankur Seva Foundation" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+          <div class="overflow-hidden" style="aspect-ratio: 1 / 1;">
+            <img
+              src="assets/images/Babu Gauraveni Director of Jeevan Ankur Seva Foundation.jpeg"
+              alt="Babu Gauraveni - Director of Jeevan Ankur Seva Foundation"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              style="object-position: top center;">
           </div>
-          <div class="team-card-body p-6 text-center">
+          <div class="team-card-body p-5 sm:p-6 text-center">
             <h3 class="font-heading font-bold text-xl text-charcoal mb-1">Babu Gauraveni</h3>
-            <p class="text-primary font-medium text-sm mb-4">Director</p>
-            <p class="text-charcoal/70 text-sm mb-6">A passionate social worker driven by the belief that every senior citizen deserves to live with dignity and love. Babu leads Jeevan Ankur Seva Foundation with a deep commitment to providing a safe, caring home for our elders.</p>
+            <p class="text-primary font-medium text-sm mb-3 sm:mb-4">Director</p>
+            <p class="text-charcoal/70 text-sm mb-5 sm:mb-6 leading-relaxed">A passionate social worker driven by the belief that every senior citizen deserves to live with dignity and love. Babu leads Jeevan Ankur Seva Foundation with a deep commitment to providing a safe, caring home for our elders.</p>
             <div class="flex justify-center gap-4 text-charcoal/50">
               <a href="tel:+918169615400" class="hover:text-primary transition" title="Call"><i class="fas fa-phone"></i></a>
               <a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-primary transition" title="Email"><i class="fas fa-envelope"></i></a>
@@ -128,15 +150,19 @@
           </div>
         </div>
 
-        <!-- Director 2: Srinivas Sankati -->
+        <!-- Director 2: Netra Nilesh Vengurlekar (replaces Srinivas Sankati) -->
         <div class="team-card bg-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow fade-in delay-200">
-          <div class="aspect-square overflow-hidden">
-            <img src="assets/images/Srinivas Sankati 2nd Director of Jeevan Ankur Seva Foundation.jpeg" alt="Srinivas Sankati - 2nd Director of Jeevan Ankur Seva Foundation" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+          <div class="overflow-hidden" style="aspect-ratio: 1 / 1;">
+            <img
+              src="assets/images/Netra_nilesh_vengurlekar.jpeg"
+              alt="Netra Nilesh Vengurlekar - 2nd Director of Jeevan Ankur Seva Foundation"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              style="object-position: top center;">
           </div>
-          <div class="team-card-body p-6 text-center">
-            <h3 class="font-heading font-bold text-xl text-charcoal mb-1">Srinivas Sankati</h3>
-            <p class="text-primary font-medium text-sm mb-4">2nd Director</p>
-            <p class="text-charcoal/70 text-sm mb-6">Co-leading the foundation with vision and dedication, Srinivas ensures that the organization's operations, outreach, and resident care uphold the highest standards of compassion and transparency.</p>
+          <div class="team-card-body p-5 sm:p-6 text-center">
+            <h3 class="font-heading font-bold text-xl text-charcoal mb-1">Netra Nilesh Vengurlekar</h3>
+            <p class="text-primary font-medium text-sm mb-3 sm:mb-4">2nd Director</p>
+            <p class="text-charcoal/70 text-sm mb-5 sm:mb-6 leading-relaxed">Co-leading the foundation with vision and dedication, Netra ensures that the organization's operations, outreach, and resident care uphold the highest standards of compassion and transparency.</p>
             <div class="flex justify-center gap-4 text-charcoal/50">
               <a href="tel:+918169615400" class="hover:text-primary transition" title="Call"><i class="fas fa-phone"></i></a>
               <a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-primary transition" title="Email"><i class="fas fa-envelope"></i></a>
@@ -146,39 +172,39 @@
       </div>
 
       <!-- Registration Info -->
-      <div class="mt-16 text-center fade-in">
-        <div class="inline-flex items-center gap-3 bg-secondary/10 px-6 py-3 rounded-full">
+      <div class="mt-12 sm:mt-16 text-center fade-in">
+        <div class="inline-flex items-center gap-3 bg-secondary/10 px-5 sm:px-6 py-3 rounded-full">
           <i class="fas fa-certificate text-secondary"></i>
-          <span class="text-sm font-medium text-charcoal">CIN: U88900MH2026NPL471582 | Registered under Companies Act</span>
+          <span class="text-xs sm:text-sm font-medium text-charcoal">CIN: U88900MH2026NPL471582 | Registered under Companies Act</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Our Impact -->
-  <section class="py-20 bg-light-gray">
+  <!-- Our Team in Action -->
+  <section class="py-14 sm:py-20 bg-light-gray">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12 fade-in">
-        <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal mb-4">Our Team in Action</h2>
-        <div class="w-20 h-1 bg-primary mx-auto rounded mb-6"></div>
-        <p class="text-charcoal/70 max-w-2xl mx-auto">Together with our volunteers and supporters, we create a family-like environment for our respected residents.</p>
+      <div class="text-center mb-10 sm:mb-12 fade-in">
+        <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-4">Our Team in Action</h2>
+        <div class="w-20 h-1 bg-primary mx-auto rounded mb-5 sm:mb-6"></div>
+        <p class="text-charcoal/70 max-w-2xl mx-auto text-sm sm:text-base">Together with our volunteers and supporters, we create a family-like environment for our respected residents.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
         <div class="rounded-2xl overflow-hidden shadow-md fade-in">
-          <img src="assets/images/team.jpg.jpeg" alt="Team with elders at Jeevan Ankur Vridhashram" class="w-full h-64 object-cover">
+          <img src="assets/images/team.jpg.jpeg" alt="Team with elders at Jeevan Ankur Vridhashram" class="w-full h-52 sm:h-64 object-cover">
           <div class="bg-white p-4 text-center">
             <p class="text-sm font-medium text-charcoal">Our team spending quality time with residents</p>
           </div>
         </div>
         <div class="rounded-2xl overflow-hidden shadow-md fade-in delay-100">
-          <img src="assets/images/festival-birthday.jpg.jpeg" alt="Birthday celebration at the Vridhashram" class="w-full h-64 object-cover">
+          <img src="assets/images/festival-birthday.jpg.jpeg" alt="Birthday celebration at the Vridhashram" class="w-full h-52 sm:h-64 object-cover">
           <div class="bg-white p-4 text-center">
             <p class="text-sm font-medium text-charcoal">Celebrating birthdays with love and joy</p>
           </div>
         </div>
-        <div class="rounded-2xl overflow-hidden shadow-md fade-in delay-200">
-          <img src="assets/images/elders-1.jpeg" alt="Distributing essentials to elders" class="w-full h-64 object-cover">
+        <div class="rounded-2xl overflow-hidden shadow-md fade-in delay-200 sm:col-span-2 md:col-span-1">
+          <img src="assets/images/elders-1.jpeg" alt="Distributing essentials to elders" class="w-full h-52 sm:h-64 object-cover">
           <div class="bg-white p-4 text-center">
             <p class="text-sm font-medium text-charcoal">Distributing essentials and care to our elders</p>
           </div>
@@ -187,18 +213,18 @@
     </div>
   </section>
 
-  <!-- Join Our Team CTA -->
-  <section class="py-20 bg-secondary text-white relative overflow-hidden">
+  <!-- Join Our Team / Volunteer CTA -->
+  <section class="py-14 sm:py-20 bg-secondary text-white relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
       <div class="absolute inset-0" style="background-image: url('assets/images/team.jpg.jpeg'); background-size: cover; background-position: center;"></div>
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-10 sm:gap-12 items-start">
         <div class="fade-in">
-          <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">Be Part of Our Mission</h2>
-          <p class="text-white/80 text-lg mb-6">Volunteering at Jeevan Ankur Seva Foundation is a profoundly rewarding experience. Whether you can spare a few hours on weekends or offer professional skills, your time can bring smiles to our elders.</p>
-          
-          <ul class="space-y-4 mb-8">
+          <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-5 sm:mb-6">Be Part of Our Mission</h2>
+          <p class="text-white/80 text-base sm:text-lg mb-5 sm:mb-6">Volunteering at Jeevan Ankur Seva Foundation is a profoundly rewarding experience. Whether you can spare a few hours on weekends or offer professional skills, your time can bring smiles to our elders.</p>
+
+          <ul class="space-y-4 mb-6 sm:mb-8">
             <li class="flex items-start gap-3">
               <div class="mt-1 w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center shrink-0">
                 <i class="fas fa-check text-xs"></i>
@@ -230,26 +256,26 @@
         </div>
 
         <!-- Volunteer Form -->
-        <div class="bg-white p-8 rounded-2xl shadow-xl text-charcoal fade-in delay-200">
-          <h3 class="font-heading text-2xl font-bold mb-6 text-center">Volunteer Inquiry Form</h3>
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl text-charcoal fade-in delay-200">
+          <h3 class="font-heading text-xl sm:text-2xl font-bold mb-5 sm:mb-6 text-center">Volunteer Inquiry Form</h3>
           <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for your interest! We will contact you soon.');">
             <div class="form-group">
-              <label for="name" class="form-label text-sm font-medium text-charcoal/80 mb-1 block">Full Name</label>
-              <input type="text" id="name" class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none" required>
+              <label for="name" class="form-label text-sm font-medium">Full Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Your full name" required>
             </div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 form-grid-2">
               <div class="form-group">
-                <label for="email" class="form-label text-sm font-medium text-charcoal/80 mb-1 block">Email Address</label>
-                <input type="email" id="email" class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none" required>
+                <label for="email" class="form-label text-sm font-medium">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
               </div>
               <div class="form-group">
-                <label for="phone" class="form-label text-sm font-medium text-charcoal/80 mb-1 block">Phone Number</label>
-                <input type="tel" id="phone" class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none" required>
+                <label for="phone" class="form-label text-sm font-medium">Phone Number</label>
+                <input type="tel" id="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required>
               </div>
             </div>
             <div class="form-group">
-              <label for="interest" class="form-label text-sm font-medium text-charcoal/80 mb-1 block">Area of Interest</label>
-              <select id="interest" class="form-select w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none" required>
+              <label for="interest" class="form-label text-sm font-medium">Area of Interest</label>
+              <select id="interest" class="form-select" required>
                 <option value="" disabled selected>Select an area</option>
                 <option value="weekend">Weekend Visits</option>
                 <option value="medical">Medical Support</option>
@@ -259,7 +285,7 @@
                 <option value="other">Other</option>
               </select>
             </div>
-            <button type="submit" class="btn-primary w-full py-3 rounded-lg font-medium text-center mt-4 transition hover:shadow-lg">Submit Application</button>
+            <button type="submit" class="btn-primary w-full justify-center">Submit Application</button>
           </form>
         </div>
       </div>
@@ -267,9 +293,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+  <footer class="bg-charcoal text-white pt-12 sm:pt-16 pb-8 px-4">
     <div class="max-w-7xl mx-auto">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
         <div>
           <div class="flex items-center gap-3 mb-4">
             <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
@@ -287,7 +313,7 @@
           <a href="about.html">About Us</a>
           <a href="old-age-home.html">Our Old Age Home</a>
           <a href="services.html">Services</a>
-          <a href="activities.html">Activities & Events</a>
+          <a href="activities.html">Activities &amp; Events</a>
           <a href="gallery.html">Gallery</a>
         </div>
         <div class="footer-links">
@@ -301,18 +327,19 @@
         <div>
           <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
           <div class="space-y-3 text-sm text-white/70">
-            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
-            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
-            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1 flex-shrink-0"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary flex-shrink-0"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-start gap-3"><i class="fas fa-envelope text-primary mt-0.5 flex-shrink-0"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
           </div>
         </div>
       </div>
-      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs sm:text-sm text-white/50 text-center">
         <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved. | CIN: U88900MH2026NPL471582</p>
         <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
       </div>
     </div>
   </footer>
+
   <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
   <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
   <script src="js/main.js"></script>

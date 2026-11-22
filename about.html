@@ -36,17 +36,18 @@
 </head>
 <body class="font-body bg-cream text-charcoal">
 
+  <!-- Navigation -->
   <nav class="nav-container fixed top-0 left-0 right-0 z-50 bg-white/90">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-12 h-12 rounded-full object-cover">
-          <div>
-            <span class="font-heading font-bold text-lg text-charcoal leading-tight block">Jeevan Ankur</span>
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 min-w-0">
+          <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover flex-shrink-0">
+          <div class="min-w-0">
+            <span class="font-heading font-bold text-base sm:text-lg text-charcoal leading-tight block truncate">Jeevan Ankur</span>
             <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
           </div>
         </a>
-        <div class="hidden lg:flex items-center gap-8">
+        <div class="hidden lg:flex items-center gap-6 xl:gap-8">
           <a href="index.html" class="nav-link text-sm font-medium text-charcoal">Home</a>
           <a href="about.html" class="nav-link text-sm font-medium text-charcoal">About Us</a>
           <a href="old-age-home.html" class="nav-link text-sm font-medium text-charcoal">Our Old Age Home</a>
@@ -57,41 +58,59 @@
           <a href="contact.html" class="nav-link text-sm font-medium text-charcoal">Contact</a>
           <a href="donate.html" class="btn-primary text-sm">Donate Now <i class="fas fa-heart ml-1"></i></a>
         </div>
-        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <button id="hamburger" class="hamburger lg:hidden flex flex-col gap-1.5 p-2 rounded-lg" aria-label="Toggle menu" aria-expanded="false">
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
           <span class="hamburger-line w-6 h-0.5 bg-charcoal block"></span>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="mobile-menu fixed top-20 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 p-6 overflow-y-auto lg:hidden">
-      <div class="flex flex-col gap-4">
-        <a href="index.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Home</a>
-        <a href="about.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">About Us</a>
-        <a href="old-age-home.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Old Age Home</a>
-        <a href="services.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Services</a>
-        <a href="activities.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Activities & Events</a>
-        <a href="gallery.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Gallery</a>
-        <a href="team.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Our Team</a>
-        <a href="contact.html" class="mobile-nav-link text-base font-medium text-charcoal py-2 border-b border-gray-100">Contact Us</a>
-        <a href="donate.html" class="btn-primary text-center mt-2">Donate Now <i class="fas fa-heart ml-1"></i></a>
-        <div class="mt-4 pt-4 border-t border-gray-100">
-          <a href="tel:+918169615400" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-phone text-primary"></i> +91 8169615400</a>
-          <a href="mailto:jeevanankursevafoundation@gmail.com" class="flex items-center gap-3 text-sm text-charcoal py-2"><i class="fas fa-envelope text-primary"></i> Email Us</a>
-        </div>
-      </div>
-    </div>
   </nav>
 
-  <section class="pt-20">
-    <div class="bg-secondary py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-overlay" class="mobile-menu-overlay lg:hidden"></div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="flex items-center gap-2">
+        <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-9 h-9 rounded-full object-cover">
+        <div>
+          <span class="font-heading font-bold text-sm text-charcoal leading-tight block">Jeevan Ankur</span>
+          <span class="text-xs text-primary font-medium tracking-wide">SEVA FOUNDATION</span>
+        </div>
+      </div>
+      <button id="mobile-close" class="mobile-menu-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="old-age-home.html" class="mobile-nav-link">Our Old Age Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="activities.html" class="mobile-nav-link">Activities &amp; Events</a>
+      <a href="gallery.html" class="mobile-nav-link">Gallery</a>
+      <a href="team.html" class="mobile-nav-link">Our Team</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="donate.html" class="btn-primary w-full justify-center mb-4"><i class="fas fa-hand-holding-heart"></i> Donate Now</a>
+      <div class="mobile-menu-contact">
+        <a href="tel:+918169615400"><i class="fas fa-phone text-primary w-4"></i><span>+91 8169615400</span></a>
+        <a href="mailto:jeevanankursevafoundation@gmail.com"><i class="fas fa-envelope text-primary w-4"></i><span>Email Us</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Hero Banner -->
+  <section class="pt-16 sm:pt-20">
+    <div class="bg-secondary py-12 sm:py-16 md:py-20 px-4 text-center text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-20">
         <div class="absolute inset-0" style="background-image: url('assets/images/elders-2.jpg.jpeg'); background-size: cover; background-position: center;"></div>
       </div>
       <div class="relative z-10 max-w-4xl mx-auto">
-        <h1 class="font-heading text-3xl md:text-5xl font-bold mb-4">About Us</h1>
-        <p class="text-white/90 text-lg">Our journey of compassion, care, and family-like warmth</p>
-        <div class="flex justify-center gap-2 mt-6 text-sm text-white/80">
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">About Us</h1>
+        <p class="text-white/90 text-base sm:text-lg">Our journey of compassion, care, and family-like warmth</p>
+        <div class="flex justify-center gap-2 mt-5 text-sm text-white/80">
           <a href="index.html" class="hover:text-accent transition">Home</a>
           <span>/</span>
           <span class="text-accent">About Us</span>
@@ -102,26 +121,26 @@
 
   <main>
     <!-- Our Story Section -->
-    <section class="py-16 md:py-24 px-4 bg-white">
+    <section class="py-14 sm:py-16 md:py-24 px-4 bg-white">
       <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="grid lg:grid-cols-2 gap-10 sm:gap-12 items-center">
           <div class="fade-in-left">
-            <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Story</h2>
+            <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Story</h2>
             <div class="section-divider w-16 h-1 bg-primary mb-6"></div>
-            <p class="text-gray-600 mb-6 leading-relaxed">
-              Jeevan Ankur Seva Foundation was born from a deep, unwavering desire to provide a safe haven, dignity, and love to abandoned and solitary elderly individuals. Rooted firmly in the profound Indian cultural values of <em>"Matru Devo Bhava, Pitru Devo Bhava"</em> (Revere your Mother as God, Revere your Father as God), our founders recognized the growing need for compassionate elder care in our society.
+            <p class="text-gray-600 mb-5 leading-relaxed text-sm sm:text-base">
+              Jeevan Ankur Seva Foundation was born from a deep, unwavering desire to provide a safe haven, dignity, and love to abandoned and solitary elderly individuals. Rooted firmly in the profound Indian cultural values of <em>"Matru Devo Bhava, Pitru Devo Bhava"</em>, our founders recognized the growing need for compassionate elder care in our society.
             </p>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <p class="text-gray-600 mb-5 leading-relaxed text-sm sm:text-base">
               We witnessed the heart-wrenching reality of senior citizens left to fend for themselves, struggling with loneliness, poor health, and the absence of a loving family. Jeevan Ankur was established not merely as a shelter, but as a vibrant, loving home where our elders can spend their twilight years with respect, emotional support, and absolute dignity.
             </p>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
               Today, our Vridhashram stands as a testament to the power of community, empathy, and dedicated service, blossoming into a sanctuary where every resident is treated as a cherished family member.
             </p>
           </div>
           <div class="fade-in-right relative">
-            <img src="assets/images/team.jpg.jpeg" alt="Elderly person smiling warmly" class="rounded-xl shadow-xl w-full object-cover h-[450px]">
-            <div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-lg hidden md:block">
-              <p class="font-heading font-bold text-2xl">Serving with Love</p>
+            <img src="assets/images/team.jpg.jpeg" alt="Elderly person smiling warmly" class="rounded-xl shadow-xl w-full object-cover h-72 sm:h-96 md:h-[450px]">
+            <div class="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-primary text-white p-4 sm:p-6 rounded-xl shadow-lg hidden sm:block">
+              <p class="font-heading font-bold text-xl sm:text-2xl">Serving with Love</p>
               <p class="text-sm opacity-90">Every elder deserves dignity</p>
             </div>
           </div>
@@ -130,28 +149,28 @@
     </section>
 
     <!-- Mission & Vision Section -->
-    <section class="py-16 md:py-24 px-4 bg-light-gray">
+    <section class="py-14 sm:py-16 md:py-24 px-4 bg-light-gray">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Purpose</h2>
+        <div class="text-center mb-10 sm:mb-16 fade-in">
+          <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Purpose</h2>
           <div class="section-divider w-16 h-1 bg-primary mx-auto"></div>
         </div>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-t-4 border-primary fade-in delay-100">
-            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-              <i class="fas fa-bullseye text-3xl text-primary"></i>
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+          <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-t-4 border-primary fade-in delay-100">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-5 sm:mb-6">
+              <i class="fas fa-bullseye text-2xl sm:text-3xl text-primary"></i>
             </div>
-            <h3 class="font-heading font-bold text-2xl text-charcoal mb-4">Our Mission</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-charcoal mb-3 sm:mb-4">Our Mission</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
               To provide exceptional care, boundless love, absolute dignity, and a safe, family-like environment for senior citizens. We are especially dedicated to supporting those who are solitary, destitute, or in need of specialized attention, ensuring their physical, mental, and emotional well-being.
             </p>
           </div>
-          <div class="card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-t-4 border-secondary fade-in delay-200">
-            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
-              <i class="fas fa-eye text-3xl text-secondary"></i>
+          <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 border-t-4 border-secondary fade-in delay-200">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-5 sm:mb-6">
+              <i class="fas fa-eye text-2xl sm:text-3xl text-secondary"></i>
             </div>
-            <h3 class="font-heading font-bold text-2xl text-charcoal mb-4">Our Vision</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-charcoal mb-3 sm:mb-4">Our Vision</h3>
+            <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
               To cultivate and inspire a society where every elderly person lives their golden years with utmost dignity, profound respect, and complete emotional fulfillment, fully integrated and cherished by the community they helped build.
             </p>
           </div>
@@ -159,134 +178,144 @@
       </div>
     </section>
 
-    <!-- Core Values -->
-    <section class="py-16 md:py-24 px-4 bg-white">
-      <div class="max-w-7xl mx-auto text-center">
-        <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4 fade-in">Our Core Values</h2>
-        <div class="section-divider w-16 h-1 bg-primary mx-auto mb-16 fade-in"></div>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Value 1 -->
-          <div class="card-icon flex flex-col items-center p-6 fade-in delay-100">
-            <div class="w-20 h-20 bg-cream rounded-full flex items-center justify-center mb-4 shadow-sm text-primary">
-              <i class="fas fa-crown text-3xl"></i>
+    <!-- Core Values — FIXED MOBILE LAYOUT -->
+    <section class="py-14 sm:py-16 md:py-24 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-10 sm:mb-16">
+          <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-secondary mb-4 fade-in">Our Core Values</h2>
+          <div class="section-divider w-16 h-1 bg-primary mx-auto fade-in"></div>
+        </div>
+
+        <div class="values-grid">
+          <!-- Value 1: Dignity -->
+          <div class="value-card fade-in delay-100">
+            <div class="value-card-icon bg-cream text-primary">
+              <i class="fas fa-crown"></i>
             </div>
-            <h4 class="font-bold text-lg mb-2">Dignity</h4>
-            <p class="text-sm text-gray-600">Honoring the life experiences and inherent worth of every senior citizen.</p>
+            <div>
+              <h4 class="font-heading font-bold">Dignity</h4>
+              <p>Honoring the life experiences and inherent worth of every senior citizen.</p>
+            </div>
           </div>
-          <!-- Value 2 -->
-          <div class="card-icon flex flex-col items-center p-6 fade-in delay-200">
-            <div class="w-20 h-20 bg-cream rounded-full flex items-center justify-center mb-4 shadow-sm text-primary">
-              <i class="fas fa-heart text-3xl"></i>
+          <!-- Value 2: Compassion -->
+          <div class="value-card fade-in delay-200">
+            <div class="value-card-icon bg-cream text-primary">
+              <i class="fas fa-heart"></i>
             </div>
-            <h4 class="font-bold text-lg mb-2">Compassion</h4>
-            <p class="text-sm text-gray-600">Delivering care with genuine love, empathy, and understanding.</p>
+            <div>
+              <h4 class="font-heading font-bold">Compassion</h4>
+              <p>Delivering care with genuine love, empathy, and understanding.</p>
+            </div>
           </div>
-          <!-- Value 3 -->
-          <div class="card-icon flex flex-col items-center p-6 fade-in delay-300">
-            <div class="w-20 h-20 bg-cream rounded-full flex items-center justify-center mb-4 shadow-sm text-primary">
-              <i class="fas fa-shield-alt text-3xl"></i>
+          <!-- Value 3: Transparency -->
+          <div class="value-card fade-in delay-300">
+            <div class="value-card-icon bg-cream text-primary">
+              <i class="fas fa-shield-alt"></i>
             </div>
-            <h4 class="font-bold text-lg mb-2">Transparency</h4>
-            <p class="text-sm text-gray-600">Maintaining open, honest operations and clear communication with our supporters.</p>
+            <div>
+              <h4 class="font-heading font-bold">Transparency</h4>
+              <p>Maintaining open, honest operations and clear communication with our supporters.</p>
+            </div>
           </div>
-          <!-- Value 4 -->
-          <div class="card-icon flex flex-col items-center p-6 fade-in delay-400">
-            <div class="w-20 h-20 bg-cream rounded-full flex items-center justify-center mb-4 shadow-sm text-primary">
-              <i class="fas fa-users text-3xl"></i>
+          <!-- Value 4: Community -->
+          <div class="value-card fade-in delay-400">
+            <div class="value-card-icon bg-cream text-primary">
+              <i class="fas fa-users"></i>
             </div>
-            <h4 class="font-bold text-lg mb-2">Community</h4>
-            <p class="text-sm text-gray-600">Fostering a sense of belonging and familial connection among residents and staff.</p>
+            <div>
+              <h4 class="font-heading font-bold">Community</h4>
+              <p>Fostering a sense of belonging and familial connection among residents and staff.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Timeline Section -->
-    <section class="py-16 md:py-24 px-4 bg-light-gray">
+    <section class="py-14 sm:py-16 md:py-24 px-4 bg-light-gray">
       <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-16 fade-in">
-          <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Journey of Care</h2>
+        <div class="text-center mb-10 sm:mb-16 fade-in">
+          <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Journey of Care</h2>
           <div class="section-divider w-16 h-1 bg-primary mx-auto"></div>
         </div>
-        
-        <div class="timeline relative border-l-2 border-primary/30 ml-4 md:ml-1/2">
+
+        <div class="relative border-l-2 border-primary/30 ml-3 sm:ml-4">
           <!-- Timeline Item 1 -->
-          <div class="timeline-item mb-10 relative pl-8 fade-in">
+          <div class="relative pl-6 sm:pl-8 mb-8 sm:mb-10 fade-in">
             <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 border-4 border-light-gray"></div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-5 sm:p-6 rounded-lg shadow-sm">
               <span class="text-accent font-bold text-sm block mb-1">2018</span>
-              <h4 class="font-heading font-bold text-xl mb-2 text-charcoal">The Foundation</h4>
-              <p class="text-gray-600 text-sm">Jeevan Ankur Seva Foundation was formally registered and established with a vision to create a safe haven for destitute elders.</p>
+              <h4 class="font-heading font-bold text-lg sm:text-xl mb-2 text-charcoal">The Foundation</h4>
+              <p class="text-gray-600 text-sm leading-relaxed">Jeevan Ankur Seva Foundation was formally registered and established with a vision to create a safe haven for destitute elders.</p>
             </div>
           </div>
-          
+
           <!-- Timeline Item 2 -->
-          <div class="timeline-item mb-10 relative pl-8 fade-in delay-100">
+          <div class="relative pl-6 sm:pl-8 mb-8 sm:mb-10 fade-in delay-100">
             <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 border-4 border-light-gray"></div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-5 sm:p-6 rounded-lg shadow-sm">
               <span class="text-accent font-bold text-sm block mb-1">2019</span>
-              <h4 class="font-heading font-bold text-xl mb-2 text-charcoal">Welcoming Our First Residents</h4>
-              <p class="text-gray-600 text-sm">We officially opened the doors of our Vridhashram in Kurla East, welcoming our first group of senior citizens into their new home.</p>
+              <h4 class="font-heading font-bold text-lg sm:text-xl mb-2 text-charcoal">Welcoming Our First Residents</h4>
+              <p class="text-gray-600 text-sm leading-relaxed">We officially opened the doors of our Vridhashram in Kurla East, welcoming our first group of senior citizens into their new home.</p>
             </div>
           </div>
 
           <!-- Timeline Item 3 -->
-          <div class="timeline-item mb-10 relative pl-8 fade-in delay-200">
+          <div class="relative pl-6 sm:pl-8 mb-8 sm:mb-10 fade-in delay-200">
             <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 border-4 border-light-gray"></div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-5 sm:p-6 rounded-lg shadow-sm">
               <span class="text-accent font-bold text-sm block mb-1">2021</span>
-              <h4 class="font-heading font-bold text-xl mb-2 text-charcoal">Community Outreach Launch</h4>
-              <p class="text-gray-600 text-sm">Initiated regular health camps and community support programs for elderly individuals residing outside our immediate facility.</p>
+              <h4 class="font-heading font-bold text-lg sm:text-xl mb-2 text-charcoal">Community Outreach Launch</h4>
+              <p class="text-gray-600 text-sm leading-relaxed">Initiated regular health camps and community support programs for elderly individuals residing outside our immediate facility.</p>
             </div>
           </div>
 
           <!-- Timeline Item 4 -->
-          <div class="timeline-item mb-10 relative pl-8 fade-in delay-300">
+          <div class="relative pl-6 sm:pl-8 mb-8 sm:mb-10 fade-in delay-300">
             <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 border-4 border-light-gray"></div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-5 sm:p-6 rounded-lg shadow-sm">
               <span class="text-accent font-bold text-sm block mb-1">2022</span>
-              <h4 class="font-heading font-bold text-xl mb-2 text-charcoal">Facility Expansion</h4>
-              <p class="text-gray-600 text-sm">Upgraded our living spaces and medical care facilities to accommodate more residents and provide specialized healthcare support.</p>
+              <h4 class="font-heading font-bold text-lg sm:text-xl mb-2 text-charcoal">Facility Expansion</h4>
+              <p class="text-gray-600 text-sm leading-relaxed">Upgraded our living spaces and medical care facilities to accommodate more residents and provide specialized healthcare support.</p>
             </div>
           </div>
-          
+
           <!-- Timeline Item 5 -->
-          <div class="timeline-item relative pl-8 fade-in delay-400">
+          <div class="relative pl-6 sm:pl-8 fade-in delay-400">
             <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 border-4 border-light-gray"></div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-5 sm:p-6 rounded-lg shadow-sm">
               <span class="text-accent font-bold text-sm block mb-1">Present</span>
-              <h4 class="font-heading font-bold text-xl mb-2 text-charcoal">Growing Family</h4>
-              <p class="text-gray-600 text-sm">Our volunteer network has grown significantly, and we continue to nurture a thriving, loving family environment for all our revered residents.</p>
+              <h4 class="font-heading font-bold text-lg sm:text-xl mb-2 text-charcoal">Growing Family</h4>
+              <p class="text-gray-600 text-sm leading-relaxed">Our volunteer network has grown significantly, and we continue to nurture a thriving, loving family environment for all our revered residents.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Leadership Preview -->
-    <section class="py-16 md:py-20 px-4 bg-light-gray">
+    <!-- Leadership Preview — UPDATED with Netra Nilesh Vengurlekar -->
+    <section class="py-14 sm:py-16 md:py-20 px-4 bg-white">
       <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-12 fade-in">
-          <h2 class="section-title text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Leadership</h2>
-          <div class="section-divider w-16 h-1 bg-primary mx-auto mb-6"></div>
-          <p class="text-gray-600 max-w-2xl mx-auto">Guiding our mission to ensure every elder receives love, respect, and round-the-clock care.</p>
+        <div class="text-center mb-10 sm:mb-12 fade-in">
+          <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Leadership</h2>
+          <div class="section-divider w-16 h-1 bg-primary mx-auto mb-4 sm:mb-6"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">Guiding our mission to ensure every elder receives love, respect, and round-the-clock care.</p>
         </div>
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="grid sm:grid-cols-2 gap-5 sm:gap-8 max-w-4xl mx-auto">
           <!-- Babu Gauraveni -->
-          <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col sm:flex-row items-center gap-6 fade-in">
-            <img src="assets/images/Babu Gauraveni Director of Jeevan Ankur Seva Foundation.jpeg" alt="Babu Gauraveni - Director" class="w-28 h-28 rounded-full object-cover shadow-sm flex-shrink-0">
+          <div class="director-preview-card fade-in">
+            <img src="assets/images/Babu Gauraveni Director of Jeevan Ankur Seva Foundation.jpeg" alt="Babu Gauraveni - Director" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full object-cover shadow-sm flex-shrink-0" style="object-position: top center;">
             <div>
-              <h3 class="font-heading font-bold text-xl text-charcoal mb-1">Babu Gauraveni</h3>
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-charcoal mb-1">Babu Gauraveni</h3>
               <p class="text-primary font-semibold text-sm mb-2">Director</p>
               <p class="text-gray-600 text-sm">Dedicated to creating a supportive, family-like environment for solitary and destitute elders.</p>
             </div>
           </div>
-          <!-- Srinivas Sankati -->
-          <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col sm:flex-row items-center gap-6 fade-in delay-100">
-            <img src="assets/images/Srinivas Sankati 2nd Director of Jeevan Ankur Seva Foundation.jpeg" alt="Srinivas Sankati - 2nd Director" class="w-28 h-28 rounded-full object-cover shadow-sm flex-shrink-0">
+          <!-- Netra Nilesh Vengurlekar (replaces Srinivas Sankati) -->
+          <div class="director-preview-card fade-in delay-100">
+            <img src="assets/images/Netra_nilesh_vengurlekar.jpeg" alt="Netra Nilesh Vengurlekar - 2nd Director" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full object-cover shadow-sm flex-shrink-0" style="object-position: top center;">
             <div>
-              <h3 class="font-heading font-bold text-xl text-charcoal mb-1">Srinivas Sankati</h3>
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-charcoal mb-1">Netra Nilesh Vengurlekar</h3>
               <p class="text-primary font-semibold text-sm mb-2">2nd Director</p>
               <p class="text-gray-600 text-sm">Overseeing strategic operations and resident welfare with unwavering compassion and transparency.</p>
             </div>
@@ -299,25 +328,25 @@
     </section>
 
     <!-- Registration & Legal -->
-    <section class="py-16 px-4 bg-white">
+    <section class="py-12 sm:py-16 px-4 bg-light-gray">
       <div class="max-w-4xl mx-auto text-center fade-in">
-        <h2 class="section-title text-2xl md:text-3xl font-heading font-bold text-secondary mb-6">Registration & Compliance</h2>
-        <p class="text-gray-600 mb-8">
+        <h2 class="section-title text-xl sm:text-2xl md:text-3xl font-heading font-bold text-secondary mb-5 sm:mb-6">Registration &amp; Compliance</h2>
+        <p class="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
           Jeevan Ankur Seva Foundation is a registered organization committed to transparency, dignity, and ethical governance.
         </p>
-        <div class="flex flex-wrap justify-center gap-6">
-          <div class="bg-cream px-6 py-4 rounded-lg border border-gray-200 shadow-sm flex items-center gap-4">
-            <i class="fas fa-id-card text-2xl text-primary"></i>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
+          <div class="bg-white px-5 py-4 rounded-lg border border-gray-200 shadow-sm flex items-center gap-4">
+            <i class="fas fa-id-card text-2xl text-primary flex-shrink-0"></i>
             <div class="text-left">
-              <p class="text-sm text-gray-500 font-medium">Corporate Identification Number (CIN)</p>
-              <p class="font-bold text-charcoal">U88900MH2026NPL471582</p>
+              <p class="text-xs sm:text-sm text-gray-500 font-medium">Corporate Identification Number (CIN)</p>
+              <p class="font-bold text-charcoal text-sm sm:text-base">U88900MH2026NPL471582</p>
             </div>
           </div>
-          <div class="bg-cream px-6 py-4 rounded-lg border border-gray-200 shadow-sm flex items-center gap-4">
-            <i class="fas fa-certificate text-2xl text-secondary"></i>
+          <div class="bg-white px-5 py-4 rounded-lg border border-gray-200 shadow-sm flex items-center gap-4">
+            <i class="fas fa-certificate text-2xl text-secondary flex-shrink-0"></i>
             <div class="text-left">
-              <p class="text-sm text-gray-500 font-medium">Entity Type</p>
-              <p class="font-bold text-charcoal">Section 8 Non-Profit Organization</p>
+              <p class="text-xs sm:text-sm text-gray-500 font-medium">Entity Type</p>
+              <p class="font-bold text-charcoal text-sm sm:text-base">Section 8 Non-Profit Organization</p>
             </div>
           </div>
         </div>
@@ -325,20 +354,21 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 px-4 bg-secondary text-white text-center">
+    <section class="py-14 sm:py-20 px-4 bg-secondary text-white text-center">
       <div class="max-w-3xl mx-auto fade-in">
-        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-6">Be a Part of Their Journey</h2>
-        <p class="text-white/80 mb-8 text-lg">Your support helps us provide continuous care, nutrition, and medical attention to the elders in our home. Join hands with Jeevan Ankur.</p>
-        <a href="donate.html" class="inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition-colors shadow-lg transform hover:-translate-y-1">
+        <h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl mb-5 sm:mb-6">Be a Part of Their Journey</h2>
+        <p class="text-white/80 mb-6 sm:mb-8 text-base sm:text-lg">Your support helps us provide continuous care, nutrition, and medical attention to the elders in our home. Join hands with Jeevan Ankur.</p>
+        <a href="donate.html" class="btn-primary inline-flex">
           Support Our Mission <i class="fas fa-heart ml-2"></i>
         </a>
       </div>
     </section>
   </main>
 
-  <footer class="bg-charcoal text-white pt-16 pb-8 px-4">
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white pt-12 sm:pt-16 pb-8 px-4">
     <div class="max-w-7xl mx-auto">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
         <div>
           <div class="flex items-center gap-3 mb-4">
             <img src="assets/images/logo.jpg" alt="Jeevan Ankur Logo" class="w-10 h-10 rounded-full object-cover">
@@ -356,7 +386,7 @@
           <a href="about.html">About Us</a>
           <a href="old-age-home.html">Our Old Age Home</a>
           <a href="services.html">Services</a>
-          <a href="activities.html">Activities & Events</a>
+          <a href="activities.html">Activities &amp; Events</a>
           <a href="gallery.html">Gallery</a>
         </div>
         <div class="footer-links">
@@ -370,18 +400,19 @@
         <div>
           <h4 class="font-heading font-bold text-lg mb-4">Contact Info</h4>
           <div class="space-y-3 text-sm text-white/70">
-            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
-            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
-            <p class="flex items-center gap-3"><i class="fas fa-envelope text-primary"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
+            <p class="flex items-start gap-3"><i class="fas fa-location-dot text-primary mt-1 flex-shrink-0"></i><span>67 D Bungalow, Kamghar Nagar, Kurla East, Mumbai, Maharashtra 400024</span></p>
+            <p class="flex items-center gap-3"><i class="fas fa-phone text-primary flex-shrink-0"></i><a href="tel:+918169615400" class="hover:text-accent transition">+91 8169615400</a></p>
+            <p class="flex items-start gap-3"><i class="fas fa-envelope text-primary mt-0.5 flex-shrink-0"></i><a href="mailto:jeevanankursevafoundation@gmail.com" class="hover:text-accent transition break-all">jeevanankursevafoundation@gmail.com</a></p>
           </div>
         </div>
       </div>
-      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+      <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs sm:text-sm text-white/50 text-center">
         <p>&copy; 2024 Jeevan Ankur Seva Foundation. All rights reserved. | CIN: U88900MH2026NPL471582</p>
         <p>Made with <i class="fas fa-heart text-primary"></i> for our elders</p>
       </div>
     </div>
   </footer>
+
   <a href="https://wa.me/918169615400?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Jeevan%20Ankur%20Old%20Age%20Home." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
   <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
   <script src="js/main.js"></script>

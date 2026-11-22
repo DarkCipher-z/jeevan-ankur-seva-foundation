@@ -487,10 +487,20 @@ section[id] {
   box-shadow: var(--shadow-lg);
 }
 
+.team-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: var(--cream);
+}
+
+.team-card-image img,
 .team-card img {
   width: 100%;
-  height: 280px;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .team-card-body {
@@ -1028,14 +1038,6 @@ html, body {
   overflow-wrap: break-word;
 }
 
-/* --- Team Cards --- */
-.team-card img {
-  height: 240px;
-  width: 100%;
-  object-fit: cover;
-  object-position: top center;
-}
-
 /* --- Director Card in About Preview (small horizontal card) --- */
 .director-preview-card {
   display: flex;
@@ -1058,7 +1060,7 @@ html, body {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center center;
   flex-shrink: 0;
 }
 
@@ -1171,10 +1173,6 @@ html, body {
 
   .gallery-item img {
     height: 250px;
-  }
-
-  .team-card img {
-    height: 280px;
   }
 
   .hero-section {
@@ -1355,10 +1353,6 @@ html, body {
 
   .donation-amount {
     font-size: 2rem;
-  }
-
-  .team-card img {
-    height: 220px;
   }
 
   .director-preview-card {
